@@ -46,7 +46,7 @@ export default function HeroCopy() {
         </div>
 
         {/* Mobile news pill */}
-        <div className="md:hidden mb-4">
+        <div className="md:hidden mb-4 flex justify-center">
           <Link
             href="/press"
             className="inline-flex items-center gap-2 rounded-full border border-red-300/70 bg-white px-3 py-1 text-xs font-medium text-red-600 shadow-sm"
