@@ -1,6 +1,7 @@
 'use client';
 
 import Image from 'next/image';
+import Link from 'next/link';
 import { motion } from 'framer-motion';
 import { HeroTitle, Subhead, Body } from '@/components/ui/typography';
 import { Button } from '@/components/ui/button';
@@ -38,10 +39,21 @@ export default function HeroCopy() {
 
   return (
     <section aria-labelledby="hero-heading" className="relative isolate">
-      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        {/* Dynamic announcement bar */}
-        <div>
+      <div className="mx-auto max-w-7xl px-4 pt-6 sm:px-6 lg:px-8 md:pt-16">
+        {/* Dynamic announcement bar - hidden on mobile */}
+        <div className="hidden md:block">
           <AnnouncementBar darkSurface={false} showViewAll />
+        </div>
+
+        {/* Mobile news pill */}
+        <div className="md:hidden mb-4">
+          <Link
+            href="/press"
+            className="inline-flex items-center gap-2 rounded-full border border-red-300/70 bg-white px-3 py-1 text-xs font-medium text-red-600 shadow-sm"
+          >
+            <span className="inline-block h-2 w-2 rounded-full bg-red-500" aria-hidden />
+            <span>News</span>
+          </Link>
         </div>
 
         <div className="mx-auto max-w-4xl py-8 pb-2 text-center sm:py-10 sm:pb-2">
@@ -54,7 +66,7 @@ export default function HeroCopy() {
               ease: "easeOut",
             }}
           >
-            <HeroTitle id="hero-heading" className="text-black leading-[1.05] tracking-tight">
+            <HeroTitle id="hero-heading" className="text-black leading-[1.1] tracking-tight text-[32px] md:text-6xl">
               Sigma helps you hire, pay
               <br className="hidden sm:block" /> and retain anyone
             </HeroTitle>
@@ -70,24 +82,18 @@ export default function HeroCopy() {
               variants={fadeInUp}
               transition={{ duration: 0.5, ease: "easeOut" }}
             >
-              <Subhead className="leading-relaxed max-w-prose">
+              <Subhead className="leading-relaxed max-w-prose mt-3 text-[15px] leading-6 text-foreground/80 md:text-lg md:leading-7">
                 Easily hire and pay your global workforce. We handle W-8BEN forms, local
                 payments, and provide USD Wallets &amp; health benefits for your staff.
-              </Subhead>
-            </motion.div>
-            <motion.div 
-              variants={fadeInUp}
-              transition={{ duration: 0.5, ease: "easeOut" }}
-            >
-              <Body className="mt-3 leading-relaxed max-w-prose">
+                <br /><br />
                 Make onboarding, payments, retention, and compliance painless with Sigma.
-              </Body>
+              </Subhead>
             </motion.div>
           </motion.div>
 
           {/* CTAs */}
           <motion.div
-            className="mt-7 flex flex-col items-center justify-center gap-3 sm:flex-row"
+            className="mt-6 flex flex-col items-center justify-center gap-3 sm:flex-row md:mt-8"
             initial="hidden"
             animate="visible"
             variants={staggerContainer}

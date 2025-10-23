@@ -60,31 +60,35 @@ export default function HeroVisual() {
             {/* Vendor row */}
             <div className="mt-8 text-center" ref={logosRef}>
               <motion.p 
-                className="text-sm text-black/60 mb-10"
+                className="text-base font-medium text-center md:text-xl text-black/60 mb-4 md:mb-10"
                 initial={{ opacity: 0 }}
                 animate={isLogosInView ? { opacity: 1 } : { opacity: 0 }}
                 transition={{ duration: 0.5 }}
               >
                 Companies use Sigma's end-to-end solution to replace:
               </motion.p>
-              <div className="flex flex-wrap items-center justify-center gap-10 md:gap-16">
-                {logos.map((logo, i) => (
-                  <motion.div
-                    key={logo.alt}
-                    custom={i}
-                    initial="hidden"
-                    animate={isLogosInView ? "visible" : "hidden"}
-                    variants={logoVariants}
-                  >
-                    <Image
-                      src={logo.src}
-                      alt={logo.alt}
-                      width={logo.width}
-                      height={logo.height}
-                      className={logo.className}
-                    />
-                  </motion.div>
-                ))}
+              <div className="mx-auto max-w-[640px] md:max-w-none">
+                <div className="grid grid-cols-2 gap-x-4 gap-y-6 md:flex md:flex-wrap md:items-center md:justify-center md:gap-10 lg:gap-16">
+                  {logos.map((logo, i) => (
+                    <motion.div
+                      key={logo.alt}
+                      custom={i}
+                      initial="hidden"
+                      animate={isLogosInView ? "visible" : "hidden"}
+                      variants={logoVariants}
+                      className="flex items-center justify-center"
+                    >
+                      <Image
+                        src={logo.src}
+                        alt={logo.alt}
+                        width={140}
+                        height={48}
+                        className="h-6 w-auto object-contain md:h-7 lg:h-8"
+                        priority={false}
+                      />
+                    </motion.div>
+                  ))}
+                </div>
               </div>
             </div>
           </div>
