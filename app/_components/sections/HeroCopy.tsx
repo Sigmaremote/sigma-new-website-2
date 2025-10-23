@@ -71,7 +71,7 @@ export default function HeroCopy() {
               transition={{ duration: 0.5, ease: "easeOut" }}
             >
               <Subhead className="leading-relaxed max-w-prose">
-                Easily hire and pay your global workforce. We handle <a href="/glossary/w-8ben" className="text-deep-green hover:text-deep-green/80 underline">W-8BEN forms</a>, local
+                Easily hire and pay your global workforce. We handle W-8BEN forms, local
                 payments, and provide USD Wallets &amp; health benefits for your staff.
               </Subhead>
             </motion.div>
