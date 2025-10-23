@@ -33,7 +33,6 @@ const data = {
   },
   contact: {
     email: 'hello@sigmaremote.com',
-    phone: '+1 (555) 123-4567',
     address: 'San Francisco, CA, USA',
   },
   company: {
@@ -73,7 +72,7 @@ const gigPlatformLinks = [
 ];
 
 const helpfulLinks = [
-  { text: 'Privacy Policy', href: '/privacy' },
+  { text: 'Privacy Policy', href: '/privacy-policy' },
   { text: 'Terms of Service', href: '/terms' },
   { text: 'Blog', href: '/blog' },
   { text: 'Press', href: '/press', hasIndicator: true },
@@ -81,7 +80,6 @@ const helpfulLinks = [
 
 const contactInfo = [
   { icon: Mail, text: data.contact.email },
-  { icon: Phone, text: data.contact.phone },
   { icon: MapPin, text: data.contact.address, isAddress: true },
 ];
 

@@ -20,14 +20,6 @@ export default function FinalCTA() {
             >
               Talk to Sales
             </Link>
-            <Link
-              href="https://wa.me/1234567890"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center justify-center rounded-full border border-white px-8 py-4 text-base font-semibold text-white hover:bg-white hover:text-black transition-colors"
-            >
-              WhatsApp
-            </Link>
           </div>
         </div>
       </div>
