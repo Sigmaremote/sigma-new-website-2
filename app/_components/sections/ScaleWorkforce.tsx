@@ -71,6 +71,8 @@ export default function ScaleWorkforce() {
               width={600}
               height={800}
               className="w-full h-auto rounded-lg shadow-2xl"
+              quality={90}
+              sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 600px"
             />
           </div>
 

@@ -67,6 +67,8 @@ export default function CTAShowcase({
                   width={400}
                   height={500}
                   className="w-full h-auto object-cover"
+                  quality={90}
+                  sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 400px"
                 />
               </div>
 
@@ -78,6 +80,8 @@ export default function CTAShowcase({
                   width={400}
                   height={500}
                   className="w-full h-auto object-cover"
+                  quality={90}
+                  sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 400px"
                 />
               </div>
             </div>

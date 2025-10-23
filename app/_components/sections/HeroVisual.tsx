@@ -51,9 +51,11 @@ export default function HeroVisual() {
                 width={2944}
                 height={1840}
                 priority
-                sizes="(max-width: 640px) 100vw, (max-width: 1024px) 90vw, 1465px"
-                quality={100}
+                sizes="(max-width: 640px) 100vw, (max-width: 768px) 100vw, (max-width: 1024px) 90vw, 1465px"
+                quality={95}
                 className="h-auto w-full"
+                placeholder="blur"
+                blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAIAAoDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAv/xAAhEAACAQMDBQAAAAAAAAAAAAABAgMABAUGIWGRkqGx0f/EABUBAQEAAAAAAAAAAAAAAAAAAAMF/8QAGhEAAgIDAAAAAAAAAAAAAAAAAAECEgMRkf/aAAwDAQACEQMRAD8AltJagyeH0AthI5xdrLcNM91BF5pX2HaH9bcfaSXWGaRmknyJckliyjqTzSlT54b6bk+h0R//2Q=="
               />
             </motion.div>
 
@@ -85,6 +87,8 @@ export default function HeroVisual() {
                         height={48}
                         className="h-6 w-auto object-contain md:h-7 lg:h-8"
                         priority={false}
+                        quality={90}
+                        sizes="(max-width: 640px) 50vw, (max-width: 768px) 33vw, 25vw"
                       />
                     </motion.div>
                   ))}

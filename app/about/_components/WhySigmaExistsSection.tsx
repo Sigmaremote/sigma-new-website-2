@@ -69,7 +69,7 @@ export default function WhySigmaExistsSection() {
               className="rounded-3xl overflow-hidden relative h-64 md:h-80"
             >
               <Image
-                src="/About Us/sigma-kevin.avif"
+                src="/about-us-images/kevin-sigma.avif"
                 alt="Kevin - Sigma Co-founder"
                 fill
                 className="object-cover object-[50%_20%]"
@@ -88,7 +88,7 @@ export default function WhySigmaExistsSection() {
               className="rounded-3xl overflow-hidden relative h-64 md:h-72"
             >
               <Image
-                src="/About Us/sigma-dog.avif"
+                src="/about-us-images/dog-sigma.avif"
                 alt="Sigma team"
                 fill
                 className="object-cover"
@@ -104,7 +104,7 @@ export default function WhySigmaExistsSection() {
               className="rounded-3xl overflow-hidden relative h-64 md:h-72"
             >
               <Image
-                src="/About Us/sigma-street-signs.avif"
+                src="/about-us-images/signs-sigma.avif"
                 alt="San Francisco street signs"
                 fill
                 className="object-cover"
@@ -123,7 +123,7 @@ export default function WhySigmaExistsSection() {
               className="rounded-3xl overflow-hidden relative h-72 md:h-[22rem]"
             >
               <Image
-                src="/About Us/sigma-guillie.avif"
+                src="/about-us-images/guillie-sigma.avif"
                 alt="Guillermo - Sigma Co-founder"
                 fill
                 className="object-cover"

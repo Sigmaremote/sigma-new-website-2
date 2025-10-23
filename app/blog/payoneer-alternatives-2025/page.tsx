@@ -8,7 +8,7 @@ const DATA: BlogV2Data = {
   title: "Best Payoneer Alternatives for Global Payroll in 2025.",
   dek: "Find a Better Experience for Your International Team",
   lastUpdate: "2025-10-22",
-  coverImage: { src:"/Blog images/Payoneer Alternatives Blog 2/payoneer-alternative.avif", alt:"Payoneer Alternatives", width:960, height:640 },
+  coverImage: { src:"/Blog images/Best Payoneer Alternatives for Global Payroll in 2025/payoneer-blog-hero-image.avif", alt:"Payoneer Alternatives", width:960, height:640 },
   keyTakeaways: [
     "Payoneer's total cost often exceeds 5-6% once FX and withdrawal fees are combined.",
     "SigmaRemote focuses on predictable USD-first flows, transparent pricing, and contractor satisfaction.",

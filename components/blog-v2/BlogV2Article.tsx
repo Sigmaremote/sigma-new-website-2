@@ -113,7 +113,15 @@ export function BlogV2Article({ data }: { data: BlogV2Data }) {
                     <div className="rounded-xl overflow-hidden border bg-white" style={{borderColor:'#E5E7EB'}}>
                       {isExternal
                         ? <img src={s.src} alt={s.alt||''} className="w-full h-auto" />
-                        : <Image src={s.src} alt={s.alt||''} width={1200} height={800} className="w-full h-auto" />
+                        : <Image 
+                            src={s.src} 
+                            alt={s.alt||''} 
+                            width={1200} 
+                            height={800} 
+                            className="w-full h-auto" 
+                            quality={90}
+                            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 80vw, 1200px"
+                          />
                       }
                     </div>
                     {s.alt && <figcaption className="text-sm mt-2" style={{color:'#6B7280'}}>{s.alt}</figcaption>}

@@ -1,4 +1,5 @@
 import { ArrowRight } from "lucide-react";
+import Image from "next/image";
 
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
@@ -106,10 +107,14 @@ const Blog7 = ({
                   href={post.url}
                   className="transition-opacity duration-200 fade-in hover:opacity-70"
                 >
-                  <img
+                  <Image
                     src={post.image}
                     alt={post.title}
+                    width={400}
+                    height={225}
                     className="h-full w-full object-cover object-center rounded-t-lg"
+                    quality={90}
+                    sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
                   />
                 </a>
               </div>

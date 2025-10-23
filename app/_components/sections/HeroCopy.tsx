@@ -138,6 +138,8 @@ export default function HeroCopy() {
               width={180}
               height={60}
               className="h-12 w-auto"
+              quality={95}
+              sizes="(max-width: 640px) 90px, 180px"
             />
             <Image
               src="/landing-page-images/producthuntbadge2.svg"
@@ -145,6 +147,8 @@ export default function HeroCopy() {
               width={180}
               height={60}
               className="h-12 w-auto"
+              quality={95}
+              sizes="(max-width: 640px) 90px, 180px"
             />
           </motion.div>
         </div>

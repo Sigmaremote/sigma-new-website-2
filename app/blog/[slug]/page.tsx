@@ -12,7 +12,7 @@ const DATA: BlogV2Data = {
   title: "How to Hire International Contractors in 2025 (Without the Legal Headaches)",
   dek: "A step-by-step playbook for hiring fast, saving on costs, and staying compliant across borders.",
   lastUpdate: new Date().toLocaleDateString(),
-  coverImage: { src:"/Blog images/How to Hire Blog 1/new blog image 2.jpg", alt:"Placeholder image", width:960, height:640 },
+  coverImage: { src:"/Blog images/How to Hire International Contractors in 2025 (Without the Legal Headaches) - Images/how-to-hire-blog-image.jpg", alt:"How to Hire International Contractors", width:960, height:640 },
   keyTakeaways: [
     "86.5M+ freelancers expected in the U.S. by 2027, representing over 50% of the workforce.",
     "Businesses can save up to 60% in operational costs by working with contractors.",

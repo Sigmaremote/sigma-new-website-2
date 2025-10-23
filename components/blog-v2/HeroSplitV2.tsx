@@ -8,7 +8,16 @@ export function HeroSplitV2({title, dek, lastUpdate, image}:{title:string;dek?:s
         {/* Floating image - overflows hero box more */}
         <div className="hidden md:block float-right max-w-[520px] ml-8 -mb-24">
           <div className="rounded-xl overflow-hidden border shadow-xl" style={{borderColor:'var(--v2-border)'}}>
-            <Image src={image.src} alt={image.alt} width={image.width} height={image.height} priority className="w-full h-auto" />
+            <Image 
+              src={image.src} 
+              alt={image.alt} 
+              width={image.width} 
+              height={image.height} 
+              priority 
+              className="w-full h-auto" 
+              quality={95}
+              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 520px"
+            />
           </div>
         </div>
         
