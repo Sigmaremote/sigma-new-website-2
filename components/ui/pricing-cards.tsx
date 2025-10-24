@@ -8,6 +8,7 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
+import Link from "next/link";
 
 function Pricing() {
 
@@ -76,8 +77,10 @@ function Pricing() {
                       </div>
                     </div>
                   </div>
-                  <Button variant="outline" className="gap-4">
-                    Get Started <MoveRight className="w-4 h-4" />
+                  <Button variant="outline" className="gap-4" asChild>
+                    <Link href="/contact">
+                      Get Started <MoveRight className="w-4 h-4" />
+                    </Link>
                   </Button>
                 </div>
               </CardContent>
@@ -133,8 +136,10 @@ function Pricing() {
                       </div>
                     </div>
                   </div>
-                  <Button className="gap-4">
-                    Get Started <MoveRight className="w-4 h-4" />
+                  <Button className="gap-4" asChild>
+                    <Link href="/contact">
+                      Get Started <MoveRight className="w-4 h-4" />
+                    </Link>
                   </Button>
                 </div>
               </CardContent>
@@ -190,8 +195,10 @@ function Pricing() {
                       </div>
                     </div>
                   </div>
-                  <Button variant="outline" className="gap-4">
-                    Book a meeting <PhoneCall className="w-4 h-4" />
+                  <Button variant="outline" className="gap-4" asChild>
+                    <Link href="https://cal.com/globalpayroll/demo-25" target="_blank" rel="noopener noreferrer">
+                      Book a meeting <PhoneCall className="w-4 h-4" />
+                    </Link>
                   </Button>
                 </div>
               </CardContent>

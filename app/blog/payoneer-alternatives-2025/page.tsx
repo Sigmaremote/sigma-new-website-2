@@ -8,7 +8,7 @@ const DATA: BlogV2Data = {
   title: "Best Payoneer Alternatives for Global Payroll in 2025.",
   dek: "Find a Better Experience for Your International Team",
   lastUpdate: "2025-10-22",
-  coverImage: { src:"/Blog images/Best Payoneer Alternatives for Global Payroll in 2025/payoneer-blog-hero-image.avif", alt:"Payoneer Alternatives", width:960, height:640 },
+  coverImage: { src:"/Blog%20images/Best%20Payoneer%20Alternatives%20for%20Global%20Payroll%20in%202025/payoneer-blog-hero-image.avif", alt:"Payoneer Alternatives", width:960, height:640 },
   keyTakeaways: [
     "Payoneer's total cost often exceeds 5-6% once FX and withdrawal fees are combined.",
     "SigmaRemote focuses on predictable USD-first flows, transparent pricing, and contractor satisfaction.",
@@ -28,7 +28,7 @@ const DATA: BlogV2Data = {
       description: 'Join thousands of businesses that have already made the switch. Get lower fees, faster payments, and happier contractors with SigmaRemote\'s USD-first approach.',
       ctaLabel: 'Book a Demo',
       ctaHref: '/contact',
-      imageSrc: '/landing-page-images/Repeatable CTA above the footer part/image1.1.avif',
+      imageSrc: '/landing-page-images/Repeatable%20CTA%20above%20the%20footer%20part/image1.1.avif',
       imageAlt: 'SigmaRemote platform interface'
     },
     { type: 'h2', text: 'Why Payoneer Falls Short: Key Challenges Users Report', tocLabel: 'Why Payoneer Falls Short' },
@@ -98,7 +98,7 @@ const DATA: BlogV2Data = {
       description: 'Get started in minutes.',
       ctaLabel: 'Book a demo',
       ctaHref: '/contact',
-      imageSrc: '/landing-page-images/Repeatable CTA above the footer part/image1.1.avif',
+      imageSrc: '/landing-page-images/Repeatable%20CTA%20above%20the%20footer%20part/image1.1.avif',
       imageAlt: 'SigmaRemote platform interface'
     },
     { type: 'p', text: 'SigmaRemote is purpose-built to solve the real challenges of international contractor management and payroll.' },

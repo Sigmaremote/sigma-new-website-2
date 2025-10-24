@@ -39,7 +39,9 @@ export function GlobalPayrollSection() {
           </ul>
 
           <Link
-            href="/book-demo"
+            href="https://cal.com/globalpayroll/demo-25"
+            target="_blank"
+            rel="noopener noreferrer"
             className="inline-flex items-center justify-center gap-2 mt-6 bg-[hsl(64,83%,65%)] text-black font-semibold px-6 py-3 rounded-full hover:shadow-[0_6px_24px_rgba(0,0,0,0.12)] transition-all"
           >
             Book a demo <ArrowRight className="h-4 w-4" />

@@ -22,7 +22,7 @@ export function BlogCTA({
   description = `Discover how Sigma can help you hire, pay, and retain top-skilled workers globally while saving you from compliance headaches and IRS forms. Book a demo today.`,
   ctaLabel = 'Get a Free Payroll Setup',
   ctaHref = '/contact',
-  imageSrc = '/landing-page-images/Repeatable CTA above the footer part/image1.1.avif',
+  imageSrc = '/landing-page-images/Repeatable%20CTA%20above%20the%20footer%20part/image1.1.avif',
   imageAlt = 'Sigma platform interface',
   className = '',
 }: BlogCTAProps) {

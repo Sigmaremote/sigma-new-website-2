@@ -48,7 +48,7 @@ export default function GlobalTeamCTA() {
               {/* Image 1 */}
               <div className="rounded-3xl overflow-hidden ring-1 ring-black/10">
                 <Image
-                  src="/landing-page-images/Repeatable CTA above the footer part/image1.1.avif"
+                  src="/landing-page-images/Repeatable%20CTA%20above%20the%20footer%20part/image1.1.avif"
                   alt="Sigma platform interface"
                   width={400}
                   height={500}
@@ -59,7 +59,7 @@ export default function GlobalTeamCTA() {
               {/* Image 2 */}
               <div className="rounded-3xl overflow-hidden ring-1 ring-black/10">
                 <Image
-                  src="/landing-page-images/Repeatable CTA above the footer part/image1.2.avif"
+                  src="/landing-page-images/Repeatable%20CTA%20above%20the%20footer%20part/image1.2.avif"
                   alt="Sigma payroll interface"
                   width={400}
                   height={500}
