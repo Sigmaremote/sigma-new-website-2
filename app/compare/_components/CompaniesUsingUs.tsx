@@ -13,7 +13,8 @@ export default function CompaniesUsingUs() {
   return (
     <section className="relative">
       <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 py-10 md:py-14">
-        <div className="flex justify-center items-center gap-5 md:gap-6">
+        {/* Desktop logo row */}
+        <div className="hidden md:flex justify-center items-center gap-5 md:gap-6">
           {LOGOS.map((logo) => (
             <div
               key={logo.alt}
@@ -25,6 +26,22 @@ export default function CompaniesUsingUs() {
                 width={153}
                 height={42}
                 className="h-8 md:h-9 w-auto object-contain"
+                priority={false}
+              />
+            </div>
+          ))}
+        </div>
+
+        {/* Mobile logo grid */}
+        <div className="mt-6 grid grid-cols-2 gap-4 md:hidden">
+          {LOGOS.map((logo) => (
+            <div key={logo.alt} className="flex items-center justify-center rounded-xl bg-gray-100 p-3">
+              <Image
+                src={logo.src}
+                alt={logo.alt}
+                width={153}
+                height={42}
+                className="h-6 w-auto object-contain"
                 priority={false}
               />
             </div>

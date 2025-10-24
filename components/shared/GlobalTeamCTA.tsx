@@ -20,7 +20,54 @@ export default function GlobalTeamCTA() {
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         {/* dark green card */}
         <div className="rounded-3xl bg-[#0C2E1C] p-6 shadow-[0_20px_60px_rgba(0,0,0,0.10)] sm:p-10 lg:p-14">
-          <div className="grid grid-cols-1 items-start gap-8 lg:grid-cols-[minmax(520px,1fr)_minmax(480px,560px)] lg:gap-12">
+          {/* Mobile layout: stack vertically */}
+          <div className="md:hidden">
+            <div className="text-white">
+              <div className="text-sm text-lime-300 font-medium mb-2">✨ Make Your Business Thrive</div>
+              <h2 className="text-3xl font-semibold leading-tight">
+                Let's build your Global Team with Sigma
+              </h2>
+              <p className="mt-3 text-base text-white/80">
+                Discover how Sigma can help you hire, pay, and retain top-skilled workers globally while staying free from compliance headaches and IRS forms. Book a demo today.
+              </p>
+              <div className="mt-5">
+                <Link
+                  href="https://cal.com/globalpayroll/demo-25"
+                  target="_blank"
+                  aria-label="Get a Free Payroll Setup"
+                  className="inline-flex items-center gap-2 rounded-2xl bg-lime-300 px-4 py-2.5 text-sm font-semibold text-black shadow-sm transition hover:bg-lime-200"
+                >
+                  Get a Free Payroll Setup →
+                </Link>
+              </div>
+            </div>
+
+            {/* Cards area - mobile */}
+            <div className="mt-8 grid gap-6">
+              <div className="rounded-2xl bg-white p-4 text-black shadow w-full max-w-[320px] mx-auto">
+                <Image
+                  src="/landing-page-images/Repeatable%20CTA%20above%20the%20footer%20part/image1.1.avif"
+                  alt="Sigma platform interface"
+                  width={400}
+                  height={500}
+                  className="w-full max-w-[320px] h-auto rounded-2xl bg-white shadow mx-auto"
+                />
+              </div>
+
+              <div className="rounded-2xl bg-white p-4 text-black shadow w-full max-w-[320px] mx-auto">
+                <Image
+                  src="/landing-page-images/Repeatable%20CTA%20above%20the%20footer%20part/image1.2.avif"
+                  alt="Sigma payroll interface"
+                  width={400}
+                  height={500}
+                  className="w-full max-w-[320px] h-auto rounded-2xl bg-white shadow mx-auto"
+                />
+              </div>
+            </div>
+          </div>
+
+          {/* Desktop layout: side by side */}
+          <div className="hidden md:grid grid-cols-1 items-start gap-8 lg:grid-cols-[minmax(520px,1fr)_minmax(480px,560px)] lg:gap-12">
             {/* Left copy */}
             <div className="text-white">
               <div className="text-sm/5 text-white/80">✨  Make Your Business Thrive</div>

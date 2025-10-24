@@ -30,10 +30,10 @@ export default function WhyWinsBlock({
           "relative overflow-hidden rounded-3xl bg-[#0E2C22]",
           compact ? "lg:min-h-[480px]" : wide ? "lg:min-h-[420px]" : "lg:min-h-[560px]"
         )}>
-          {/* Slightly lighter inset on the left to match the reference */}
+          {/* Slightly lighter inset on the left to match the reference - hidden on mobile */}
           <div
             aria-hidden="true"
-            className="pointer-events-none absolute inset-y-6 left-6 right-[50%] rounded-3xl bg-[#12382A]"
+            className="hidden md:block pointer-events-none absolute inset-y-6 left-6 right-[50%] rounded-3xl bg-[#12382A]"
           />
 
           {/* Content grid */}

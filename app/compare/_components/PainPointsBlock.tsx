@@ -32,10 +32,10 @@ export default function PainPointsBlock({
           "relative overflow-hidden rounded-3xl bg-yellow-300 ring-1 ring-yellow-300/70",
           compact ? "lg:min-h-[480px]" : wide ? "lg:min-h-[420px]" : "lg:min-h-[560px]"
         )}>
-          {/* Darker right overlay */}
+          {/* Darker right overlay - hidden on mobile */}
           <div
             aria-hidden="true"
-            className="pointer-events-none absolute inset-y-6 right-6 left-[55%] rounded-3xl bg-yellow-400/70"
+            className="hidden md:block pointer-events-none absolute inset-y-6 right-6 left-[55%] rounded-3xl bg-yellow-400/70"
           />
 
           {/* Content */}
