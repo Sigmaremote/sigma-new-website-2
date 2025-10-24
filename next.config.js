@@ -22,9 +22,6 @@ const nextConfig = {
   },
   // Ensure static optimization for better performance
   output: 'standalone',
-  experimental: {
-    optimizeCss: true,
-  },
 }
 
 module.exports = nextConfig
