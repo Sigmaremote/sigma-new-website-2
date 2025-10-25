@@ -19,7 +19,7 @@ export function PullQuote({ children, cite, className }: PullQuoteProps) {
       </p>
       {cite && (
         <cite className="block mt-3 text-sm not-italic text-[var(--sr-muted)] font-medium">
-          — {cite}
+          - {cite}
         </cite>
       )}
     </blockquote>

@@ -27,7 +27,7 @@ const DATA: BlogV2Data = {
       imageAlt: 'SigmaRemote platform interface'
     },
     { type: 'h2', text: 'Why Hire International Contractors?' },
-    { type: 'p', text: 'The global hiring shift is undeniable. By 2027, over 86.5 million Americans will be freelancers, representing more than 50% of the U.S. workforce. Meanwhile, the freelance platform market has already reached $4.39 billion, and it\'s growing at a rapid 16.5% annually. Demand for global remote talent — especially in LATAM — has surged, with a 285% increase in tech hiring from the region over the last five years.' },
+    { type: 'p', text: 'The global hiring shift is undeniable. By 2027, over 86.5 million Americans will be freelancers, representing more than 50% of the U.S. workforce. Meanwhile, the freelance platform market has already reached $4.39 billion, and it\'s growing at a rapid 16.5% annually. Demand for global remote talent - especially in LATAM - has surged, with a 285% increase in tech hiring from the region over the last five years.' },
     { type: 'h3', text: 'Key Facts at a Glance' },
     { type: 'bullets', items: [
       '86.5M+ freelancers expected in the U.S. by 2027',
@@ -35,10 +35,10 @@ const DATA: BlogV2Data = {
       '16.5% annual growth in freelance platforms',
       '285% surge in LATAM tech hiring (past 5 years)'
     ]},
-    { type: 'p', text: 'These trends show why businesses of all sizes are increasingly turning to international contractors — and why tools like SigmaRemote make global hiring simple, compliant, and scalable.' },
+    { type: 'p', text: 'These trends show why businesses of all sizes are increasingly turning to international contractors - and why tools like SigmaRemote make global hiring simple, compliant, and scalable.' },
     { type: 'p', text: 'Hiring international contractors isn\'t just a strategy for large corporations. Businesses of all sizes are leveraging this approach to build dynamic, skilled teams without the limitations of geography.' },
     { type: 'h2', text: 'Key Benefits of Hiring International Contractors' },
-    { type: 'p', text: 'The ability to hire contractors from anywhere in the world expands your talent pool exponentially. Instead of settling for local options, you can pinpoint top talent from emerging hubs like Latin America, Eastern Europe, or Asia — all at competitive rates.' },
+    { type: 'p', text: 'The ability to hire contractors from anywhere in the world expands your talent pool exponentially. Instead of settling for local options, you can pinpoint top talent from emerging hubs like Latin America, Eastern Europe, or Asia - all at competitive rates.' },
     { type: 'example', text: 'Companies in the tech industry have witnessed a 45% increase in productivity by partnering with remote software developers from tech-savvy regions like India and Brazil.' },
     { type: 'h3', text: 'Cost Savings' },
     { type: 'p', text: 'International contractors are often more cost-effective than hiring full-time employees. You save on benefits, training, and other overhead costs traditionally associated with permanent hires.' },
@@ -90,7 +90,7 @@ const DATA: BlogV2Data = {
     { type: 'bullets', items: [
       'Built-in compliance tools reduce legal risks',
       'USD wallet feature shields contractors from exchange rate volatility',
-      'Competitive pricing — saving you up to 70% on global payroll costs'
+      'Competitive pricing - saving you up to 70% on global payroll costs'
     ]},
     { type: 'h3', text: 'Step 3. Onboard Contractors Properly' },
     { type: 'p', text: 'Provide contractors with a structured onboarding process that includes setting expectations, delivering resources, and introducing them to collaboration systems like project management tools.' },
@@ -107,7 +107,7 @@ const DATA: BlogV2Data = {
     { type: 'p', text: 'Managing the complexities of international hiring doesn\'t have to be overwhelming. Tools like <strong>SigmaRemote</strong> empower businesses to hire, pay, and manage international contractors with ease while ensuring compliance every step of the way.' },
     { type: 'h2', text: 'Ready to Build Your Global Workforce?' },
     { type: 'p', text: 'Get Started Today: <a href="https://cal.com/globalpayroll/demo-25" class="text-[#0041C4] hover:underline">Book a demo</a>' },
-    { type: 'p', text: 'Take the first step toward building a global workforce. With the right strategies and solutions, you can access the best talent worldwide. Don\'t wait — start unlocking global opportunities today.' },
+    { type: 'p', text: 'Take the first step toward building a global workforce. With the right strategies and solutions, you can access the best talent worldwide. Don\'t wait - start unlocking global opportunities today.' },
   ],
 };
 

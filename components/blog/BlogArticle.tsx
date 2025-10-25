@@ -91,7 +91,7 @@ export function BlogArticle({ data }:{ data: BlogData }) {
                 }
                 if (s.type === 'bullets') return <ul key={idx}>{s.items?.map((it,i)=><li key={i}>{it}</li>)}</ul>;
                 if (s.type === 'steps') return <ol key={idx} className="list-decimal pl-5">{s.items?.map((it,i)=><li key={i} className="mb-1.5">{it}</li>)}</ol>;
-                if (s.type === 'p') return <p key={idx}>{s.text?.replace(/—/g, '-')}</p>;
+                if (s.type === 'p') return <p key={idx}>{s.text?.replace(/-/g, '-')}</p>;
                 return null;
               })}
             </Prose>

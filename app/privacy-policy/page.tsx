@@ -6,7 +6,7 @@ export const dynamic = "force-static";
 
 export function generateMetadata(): Metadata {
   return generateSEOMetadata({
-    title: "Privacy Policy — SigmaRemote",
+    title: "Privacy Policy - SigmaRemote",
     description: "How Sigma App, Inc. collects, uses, shares, and protects your personal information.",
     url: "/privacy-policy",
     type: "website",

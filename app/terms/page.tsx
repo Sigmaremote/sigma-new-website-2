@@ -3,7 +3,7 @@ import { generateMetadata as generateSEOMetadata } from "@/lib/seo";
 import { TermsToc } from "@/components/ui/TermsToc";
 
 export const metadata: Metadata = generateSEOMetadata({
-  title: "Terms & Conditions — SigmaRemote",
+  title: "Terms & Conditions - SigmaRemote",
   description: "Terms of Service governing your access to and use of Sigma App, Inc. services.",
   url: "/terms",
   type: "website",

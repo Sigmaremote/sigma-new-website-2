@@ -49,26 +49,32 @@ export function GlobalPayrollSection() {
         </div>
 
         {/* RIGHT: Two image cards - 60% width total */}
-        <div className="md:col-span-2 flex flex-col md:flex-row gap-8 items-center justify-center">
+        <div className="md:col-span-2 flex flex-col md:flex-row gap-6 md:gap-8 items-center justify-center">
           {/* FIRST IMAGE: Team box - 45% of right area (narrower) */}
-          <div className="w-full md:flex-1 md:max-w-[45%] rounded-[20px] bg-white text-neutral-900 p-2 flex flex-col justify-center items-center">
+          <div className="w-full md:flex-1 md:max-w-[45%] rounded-[20px] bg-white text-neutral-900 p-3 md:p-2 flex flex-col justify-center items-center shadow-sm">
             <Image
               src="/Pricing images/iamge2.1.avif"
               alt="Global Payroll Feature 1"
-              width={300}
-              height={200}
+              width={600}
+              height={400}
               className="object-contain w-full h-auto"
+              quality={95}
+              priority={false}
+              sizes="(max-width: 768px) 100vw, (max-width: 1024px) 45vw, 30vw"
             />
           </div>
 
           {/* SECOND IMAGE: Add Payroll box - 55% of right area (wider) */}
-          <div className="w-full md:flex-1 md:max-w-[45%] rounded-[20px] bg-white text-neutral-900 p-2 flex flex-col justify-center items-center">
+          <div className="w-full md:flex-1 md:max-w-[45%] rounded-[20px] bg-white text-neutral-900 p-3 md:p-2 flex flex-col justify-center items-center shadow-sm">
             <Image
               src="/Pricing images/image2.2.avif"
               alt="Global Payroll Feature 2"
-              width={240}
-              height={192}
+              width={600}
+              height={400}
               className="object-contain w-full h-auto"
+              quality={95}
+              priority={false}
+              sizes="(max-width: 768px) 100vw, (max-width: 1024px) 45vw, 30vw"
             />
           </div>
         </div>

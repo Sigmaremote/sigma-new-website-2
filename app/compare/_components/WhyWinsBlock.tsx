@@ -38,31 +38,11 @@ export default function WhyWinsBlock({
 
           {/* Content grid */}
           <div className={cn(
-            "relative grid grid-cols-1 lg:grid-cols-2",
-            compact ? "gap-8 px-6 py-8" : wide ? "gap-12 lg:gap-x-20 px-8 md:px-10 py-8" : "gap-10 lg:gap-14 px-8 md:px-10 py-12"
+            "relative grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12",
+            compact ? "px-6 py-8" : wide ? "px-8 md:px-10 py-8" : "px-8 md:px-10 py-12"
           )}>
-            {/* Left: framed image card */}
-            <div className={cn(
-              "relative flex justify-center",
-              wide ? "lg:justify-start lg:-translate-x-4" : "lg:justify-start"
-            )}>
-              <div className={cn(
-                "relative hover:-translate-y-0.5 transition-all duration-200",
-                compact ? "max-w-[66%]" : wide ? "max-w-[72%]" : "max-w-[72%]"
-              )}>
-                <Image
-                  src={imageSrc}
-                  alt="Why SigmaRemote Wins - product overview"
-                  width={640}
-                  height={800}
-                  className="w-full h-auto object-contain rounded-xl"
-                  priority={false}
-                />
-              </div>
-            </div>
-
-            {/* Right: text + bullets */}
-            <div className="max-w-xl text-white">
+            {/* Text + bullets - order-1 on mobile, order-1 on desktop */}
+            <div className="order-1 lg:order-1 max-w-xl text-white">
               <h3 className="text-3xl md:text-4xl font-semibold text-white">
                 Why SigmaRemote Wins
               </h3>
@@ -80,6 +60,26 @@ export default function WhyWinsBlock({
                   </li>
                 ))}
               </ul>
+            </div>
+
+            {/* Image - order-2 on mobile, order-2 on desktop */}
+            <div className={cn(
+              "order-2 lg:order-2 relative flex justify-center mt-8 lg:mt-0",
+              wide ? "lg:justify-end lg:translate-x-4" : "lg:justify-end lg:translate-x-2"
+            )}>
+              <div className={cn(
+                "relative hover:-translate-y-0.5 transition-all duration-200",
+                compact ? "max-w-[66%]" : wide ? "max-w-[72%]" : "max-w-[72%]"
+              )}>
+                <Image
+                  src={imageSrc}
+                  alt="Why SigmaRemote Wins - product overview"
+                  width={640}
+                  height={800}
+                  className="w-full max-w-full h-auto object-contain rounded-xl"
+                  priority={false}
+                />
+              </div>
             </div>
           </div>
         </div>
