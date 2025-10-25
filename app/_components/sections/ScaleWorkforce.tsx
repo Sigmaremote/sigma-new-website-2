@@ -47,7 +47,7 @@ export default function ScaleWorkforce() {
   };
 
   return (
-    <div className="py-16 bg-white">
+    <div className="py-16 bg-white relative w-full overflow-x-hidden lg:overflow-visible">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8" ref={sectionRef}>
         {/* Main Green Box Container */}
         <div className="bg-lime rounded-3xl p-8 lg:p-12 relative overflow-hidden">

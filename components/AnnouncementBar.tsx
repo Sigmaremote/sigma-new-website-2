@@ -101,33 +101,25 @@ export default function AnnouncementBar({
             )}
           </div>
 
-          {/* Mobile version - simplified block layout */}
+          {/* Mobile version - completely different block layout */}
           <Link
-            href="/press/stablecoin-payroll-415b-crypto-market"
-            className="flex lg:hidden flex-col gap-1 p-3 rounded-lg hover:bg-black/5 transition-colors"
+            href={`/press/${latest.slug}`}
+            className="flex flex-col lg:hidden"
             aria-label={`Open press: ${latest.title}`}
           >
-            {/* Row 1: Red dot + News */}
-            <div className="inline-flex items-center gap-2 text-[13px] font-medium text-red-500">
-              <Dot />
+            <div className="flex items-center gap-2 text-[13px] font-medium text-red-500">
+              <span className="inline-block h-[6px] w-[6px] rounded-full bg-red-500" />
               <span>News</span>
             </div>
-            
-            {/* Row 2: Title */}
+
             <div className="text-[15px] leading-tight font-medium text-neutral-900 line-clamp-2">
               {latest.title}
             </div>
-            
-            {/* Row 3: Date and region */}
+
             <div className="text-[12px] text-neutral-500">
-              {showDate && (
-                <>
-                  {formatPressDate(latest.publishedAt)} • {latest.region}
-                </>
-              )}
+              {formatPressDate(latest.publishedAt)} • {latest.region}
             </div>
-            
-            {/* Row 4: Description */}
+
             <div className="text-[13px] text-neutral-500">
               Latest company announcements and product launches.
             </div>

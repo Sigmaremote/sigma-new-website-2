@@ -11,7 +11,7 @@ export default function FinancialComplianceHubs() {
   const isBottomCardInView = useInView(bottomCardRef, { once: true, margin: "-100px" });
 
   return (
-    <div aria-label="Financial, Benefits, and Compliance Hubs" className="relative isolate">
+    <div aria-label="Financial, Benefits, and Compliance Hubs" className="relative isolate w-full overflow-x-hidden lg:overflow-visible">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8" ref={sectionRef}>
         {/* Main Headline */}
         <motion.div 
