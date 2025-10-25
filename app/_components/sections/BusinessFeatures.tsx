@@ -84,16 +84,6 @@ export default function BusinessFeatures() {
               </h3>
               <p className="text-lg text-gray-600 leading-relaxed">
                 {card.description}
-                {card.linkText && card.linkUrl && (
-                  <span className="block mt-2">
-                    <a 
-                      href={card.linkUrl} 
-                      className="text-deep-green hover:text-deep-green/80 underline text-base"
-                    >
-                      {card.linkText}
-                    </a>
-                  </span>
-                )}
               </p>
             </motion.div>
           ))}
