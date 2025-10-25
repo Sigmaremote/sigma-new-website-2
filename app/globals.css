@@ -149,20 +149,17 @@ html {
 
 /* Mobile-specific fixes */
 @media (max-width: 768px) {
-  /* Ensure proper mobile scrolling */
-  body {
-    overflow-x: hidden;
-    -webkit-overflow-scrolling: touch;
-  }
-  
   /* Fix any wide elements */
   img, video, iframe, canvas, svg {
     max-width: 100%;
     height: auto;
   }
-  
-  /* Prevent horizontal scrolling on comparison pages */
-  .overflow-x-hidden {
-    overflow-x: hidden !important;
-  }
+}
+
+/* Line clamp utilities */
+.line-clamp-2 {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }

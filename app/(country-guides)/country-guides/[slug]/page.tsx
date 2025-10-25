@@ -49,7 +49,7 @@ export default function CountryPage({ params }: CountryPageProps) {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
       
-      <main className="min-h-screen bg-white">
+      <main className="bg-white">
         <Container>
           <div className="py-12">
             {/* Breadcrumb */}

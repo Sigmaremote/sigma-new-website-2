@@ -5,7 +5,7 @@ export const dynamic = 'force-dynamic';
 
 export default function NavbarDemoPage() {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-50 to-slate-100">
+    <div className="bg-gradient-to-br from-slate-50 to-slate-100">
       {/* Demo content to show the navbar in context */}
       <div className="container mx-auto px-4 py-20">
         <div className="text-center mb-16">

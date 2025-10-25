@@ -76,7 +76,7 @@ export default function ComparePage() {
   };
 
   return (
-    <div className="min-h-screen bg-white">
+    <div className="bg-white">
       <div className="max-w-6xl mx-auto px-4 md:px-6 py-8">
         {/* Back Button */}
         <div className="mb-6">

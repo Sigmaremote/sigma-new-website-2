@@ -18,10 +18,10 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       </head>
       <body className={cn(
         // Enforce Satoshi globally
-        'font-satoshi antialiased min-h-screen bg-white text-black'
+        'font-satoshi antialiased bg-white text-black'
       )}>
         <Header />
-        <main className="min-h-[60vh]">{children}</main>
+        <main>{children}</main>
         <GlobalTeamCTA />
         <Footer />
       </body>

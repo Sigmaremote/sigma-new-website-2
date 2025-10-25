@@ -116,7 +116,7 @@ export default async function PressReleasePage({ params }: PressReleasePageProps
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
       
-      <article className="min-h-screen bg-gradient-to-b from-neutral-50 to-white">
+      <article className="bg-gradient-to-b from-neutral-50 to-white">
         {/* Hero Section */}
         <div className="max-w-4xl mx-auto px-6 pt-24 pb-16">
           <Hero article={article} readingTime={readingTime} />

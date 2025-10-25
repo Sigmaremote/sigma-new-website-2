@@ -59,7 +59,7 @@ export default function Page() {
   ];
 
   return (
-    <main className="overflow-x-hidden w-full">
+    <main className="w-full">
       <Script id="ld-compare-veem" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(json) }} />
       <FadeIn>
         <AnimatedSection animation="fadeUp" delay={0}>

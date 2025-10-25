@@ -35,7 +35,7 @@ const blogData = {
 
 export default function BlogPage() {
   return (
-    <div className="min-h-screen bg-white">
+    <div className="bg-white">
       <Blog7 {...blogData} />
     </div>
   );

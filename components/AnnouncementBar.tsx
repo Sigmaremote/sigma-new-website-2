@@ -55,9 +55,10 @@ export default function AnnouncementBar({
     <div className={`flex justify-center pt-6 ${className || ""}`}>
       <section aria-label="Latest press" role="region">
         <div className="animate-[fadeIn_180ms_ease-out]">
+          {/* Desktop version - keep existing pill design */}
           <div
             className={[
-              "group inline-flex items-center gap-3 rounded-full",
+              "group hidden lg:inline-flex items-center gap-3 rounded-full",
               "border px-4 py-2 shadow-sm ring-1",
               surface,
             ].join(" ")}
@@ -99,6 +100,33 @@ export default function AnnouncementBar({
               </Link>
             )}
           </div>
+
+          {/* Mobile version - simplified block layout */}
+          <Link
+            href="/press/stablecoin-payroll-415b-crypto-market"
+            className="flex lg:hidden flex-col gap-1 p-3 rounded-lg hover:bg-black/5 transition-colors"
+            aria-label={`Open press: ${latest.title}`}
+          >
+            {/* Row 1: Red dot + News */}
+            <div className="inline-flex items-center gap-2 text-[13px] font-medium text-red-500">
+              <Dot />
+              <span>News</span>
+            </div>
+            
+            {/* Row 2: Title */}
+            <div className="text-[15px] leading-[16px] font-medium text-neutral-900 line-clamp-2">
+              {latest.title}
+            </div>
+            
+            {/* Row 3: Date and region */}
+            <div className="text-[12px] text-neutral-500">
+              {showDate && (
+                <>
+                  {formatPressDate(latest.publishedAt)} • {latest.region}
+                </>
+              )}
+            </div>
+          </Link>
         </div>
       </section>
     </div>

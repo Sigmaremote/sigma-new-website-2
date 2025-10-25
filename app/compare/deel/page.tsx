@@ -39,7 +39,7 @@ export default function Page() {
   );
 
   return (
-    <main className="overflow-x-hidden w-full">
+    <main className="w-full">
       <Script id="ld-compare-deel" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
       <FadeIn>
         <AnimatedSection animation="fadeUp" delay={0}>

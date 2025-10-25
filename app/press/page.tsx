@@ -39,7 +39,7 @@ const pressData = {
 
 export default function PressPage() {
   return (
-    <div className="min-h-screen bg-white">
+    <div className="bg-white">
       <Press7 {...pressData} />
     </div>
   );

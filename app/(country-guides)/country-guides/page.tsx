@@ -175,7 +175,7 @@ export default function CountryGuidesPage() {
         }}
       />
       
-      <main className="min-h-screen bg-white">
+      <main className="bg-white">
         <Container>
           <div className="py-12 space-y-16">
             {/* Hero Section */}
