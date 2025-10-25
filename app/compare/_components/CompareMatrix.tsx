@@ -75,7 +75,9 @@ function Row({
     >
       {/* Competitor cell */}
       <div role="cell" className="flex items-start gap-4">
-        {renderCompetitorIcon(left)}
+        <div className="flex items-center justify-center w-4 h-4 text-[14px] leading-none lg:w-auto lg:h-auto lg:inline-block lg:align-top">
+          {renderCompetitorIcon(left)}
+        </div>
         <p className="text-slate-700 text-[15px] sm:text-base leading-7">
           {left?.text ?? ""}
         </p>
@@ -83,19 +85,21 @@ function Row({
 
       {/* Sigma cell (no per-row background now) */}
       <div role="cell" className="flex items-start gap-4">
-        <span 
-          className="mt-1 inline-flex h-5 w-5 items-center justify-center group/icon" 
-          aria-hidden="true"
-          title={right?.tooltip}
-        >
-          <CheckCircle2 className="h-5 w-5 text-emerald-600" />
-          {right?.tooltip && (
-            <div className="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 px-3 py-2 bg-slate-900 text-white text-xs rounded-lg opacity-0 group-hover/icon:opacity-100 transition-opacity duration-200 pointer-events-none whitespace-nowrap z-10">
-              {right.tooltip}
-              <div className="absolute top-full left-1/2 -translate-x-1/2 border-4 border-transparent border-t-slate-900" />
-            </div>
-          )}
-        </span>
+        <div className="flex items-center justify-center w-4 h-4 text-[14px] leading-none lg:w-auto lg:h-auto lg:inline-block lg:align-top">
+          <span 
+            className="inline-flex h-5 w-5 items-center justify-center group/icon" 
+            aria-hidden="true"
+            title={right?.tooltip}
+          >
+            <CheckCircle2 className="h-5 w-5 text-emerald-600" />
+            {right?.tooltip && (
+              <div className="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 px-3 py-2 bg-slate-900 text-white text-xs rounded-lg opacity-0 group-hover/icon:opacity-100 transition-opacity duration-200 pointer-events-none whitespace-nowrap z-10">
+                {right.tooltip}
+                <div className="absolute top-full left-1/2 -translate-x-1/2 border-4 border-transparent border-t-slate-900" />
+              </div>
+            )}
+          </span>
+        </div>
         <p className="text-slate-900 text-[15px] sm:text-base leading-7">
           {right?.text ?? ""}
         </p>

@@ -114,7 +114,7 @@ export default function AnnouncementBar({
             </div>
             
             {/* Row 2: Title */}
-            <div className="text-[15px] leading-[16px] font-medium text-neutral-900 line-clamp-2">
+            <div className="text-[15px] leading-tight font-medium text-neutral-900 line-clamp-2">
               {latest.title}
             </div>
             
@@ -125,6 +125,11 @@ export default function AnnouncementBar({
                   {formatPressDate(latest.publishedAt)} • {latest.region}
                 </>
               )}
+            </div>
+            
+            {/* Row 4: Description */}
+            <div className="text-[13px] text-neutral-500">
+              Latest company announcements and product launches.
             </div>
           </Link>
         </div>

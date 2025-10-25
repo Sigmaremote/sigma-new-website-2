@@ -31,7 +31,7 @@ export default function HeroVisual() {
   ];
 
   return (
-    <section aria-label="Product preview" className="relative isolate -mt-24 sm:-mt-32">
+    <section aria-label="Product preview" className="relative w-full overflow-x-hidden lg:overflow-visible isolate -mt-24 sm:-mt-32">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="relative mx-auto max-w-[2070px]">
           {/* Green background box - positioned behind and smaller than image */}

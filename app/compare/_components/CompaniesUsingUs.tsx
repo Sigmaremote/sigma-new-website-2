@@ -11,7 +11,7 @@ const LOGOS = [
 
 export default function CompaniesUsingUs() {
   return (
-    <section className="relative">
+    <section className="relative w-full overflow-x-hidden lg:overflow-visible">
       <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 py-10 md:py-14">
         {/* Desktop logo row */}
         <div className="hidden md:flex justify-center items-center gap-5 md:gap-6">

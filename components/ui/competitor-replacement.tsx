@@ -12,7 +12,7 @@ const logos = [
 
 export function CompetitorReplacementSection() {
   return (
-    <section className="w-full bg-white py-16 md:py-24">
+    <section className="w-full bg-white py-16 md:py-24 overflow-x-hidden lg:overflow-visible">
       <div className="mx-auto max-w-6xl px-6 md:px-10">
         {/* Header text */}
         <p className="text-center text-sm text-black/60 mb-10">
