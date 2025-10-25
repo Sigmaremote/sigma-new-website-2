@@ -7,7 +7,7 @@ const DATA: BlogV2Data = {
   title: "How to Hire International Contractors in 2025 (Without the Legal Headaches)",
   dek: "A step-by-step guide to hiring global talent compliantly - without FX fees, misclassification risks, or payroll delays.",
   lastUpdate: "2025-07-15",
-  coverImage: { src:"/Blog%20images/How%20to%20Hire%20International%20Contractors%20in%202025%20(Without%20the%20Legal%20Headaches)%20-%20Images/how-to-hire-blog-image.jpg", alt:"Hire International Contractors", width:960, height:640 },
+  coverImage: { src:"/Blog images/How to Hire International Contractors in 2025 (Without the Legal Headaches) - Images/how-to-hire.avif", alt:"Hire International Contractors", width:960, height:640 },
   keyTakeaways: [
     "By 2027, over 86.5 million Americans will be freelancers, representing more than 50% of the U.S. workforce.",
     "Businesses can save up to 60% in operational costs by working with contractors instead of hiring in-house staff.",

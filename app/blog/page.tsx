@@ -10,17 +10,6 @@ const blogData = {
   posts: [
     {
       id: "post-0",
-      title: "How to Hire International Contractors in 2025 (Without the Legal Headaches)",
-      summary:
-        "A step-by-step guide to hiring global talent compliantly - without FX fees, misclassification risks, or payroll delays.",
-      label: "International Hiring",
-      author: "SigmaRemote Editorial",
-      published: "15 Jan 2025",
-      url: "/blog/hire-international-contractors-2025",
-      image: "/Blog images/How to Hire International Contractors in 2025 (Without the Legal Headaches) - Images/how-to-hire-blog-image.jpg",
-    },
-    {
-      id: "post-1",
       title: "Best Payoneer Alternatives for Global Payroll in 2025.",
       summary:
         "Find a Better Experience for Your International Team",
@@ -29,6 +18,17 @@ const blogData = {
       published: "22 Oct 2025",
       url: "/blog/payoneer-alternatives-2025",
       image: "/Blog images/Best Payoneer Alternatives for Global Payroll in 2025/payoneer-blog-hero-image.avif",
+    },
+    {
+      id: "post-1",
+      title: "How to Hire International Contractors in 2025 (Without the Legal Headaches)",
+      summary:
+        "A step-by-step guide to hiring global talent compliantly - without FX fees, misclassification risks, or payroll delays.",
+      label: "International Hiring",
+      author: "SigmaRemote Editorial",
+      published: "15 Jan 2025",
+      url: "/blog/hire-international-contractors-2025",
+      image: "/Blog images/How to Hire International Contractors in 2025 (Without the Legal Headaches) - Images/how-to-hire.avif",
     },
   ],
 };

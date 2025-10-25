@@ -8,7 +8,7 @@ export function TubelightNavBarDemo() {
     { name: 'Home', url: '/', icon: Home },
     { name: 'Pricing', url: '/pricing', icon: DollarSign },
     { name: 'About', url: '/about', icon: Users },
-    { name: 'Country Guides', url: '/country-guides', icon: MapPinned },
+    // { name: 'Country Guides', url: '/country-guides', icon: MapPinned }, // Temporarily hidden
     { name: 'Blog', url: '/blog', icon: BookOpen },
     { name: 'Press', url: '/press', icon: Newspaper },
     { name: 'Glossary', url: '/glossary', icon: FileText },

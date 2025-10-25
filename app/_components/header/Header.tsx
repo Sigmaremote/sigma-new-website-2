@@ -16,9 +16,10 @@ const resources = [
   { label: 'Blog', href: '/blog' },
   { label: 'Glossary', href: '/glossary' },
   { label: 'Press', href: '/press' },
-  { label: 'Country Guides', href: '/country-guides' },
-  { label: 'Network Coverage', href: '/resources/network-coverage' },
-  { label: 'All Resources', href: '/resources' },
+  // Temporarily hidden items - will be re-enabled when ready
+  // { label: 'Country Guides', href: '/country-guides' },
+  // { label: 'Network Coverage', href: '/resources/network-coverage' },
+  // { label: 'All Resources', href: '/resources' },
 ];
 
 export default function Header() {

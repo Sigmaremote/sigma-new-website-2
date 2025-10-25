@@ -8,8 +8,13 @@ import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
 import { routes } from '@/lib/routes';
 import AnnouncementBar from '@/components/AnnouncementBar';
+import { pressReleases } from '@/data/pressReleases';
+import { formatPressDate } from '@/lib/formatDate';
 
 export default function HeroCopy() {
+  const latest = pressReleases[0]; // assume array is already newest-first
+  const formattedDate = latest ? formatPressDate(latest.publishedAt) : '';
+
   const titleVariants = {
     hidden: { opacity: 0, y: 20 },
     visible: {
@@ -46,19 +51,39 @@ export default function HeroCopy() {
         </div>
 
         {/* Mobile news pill */}
-        <div className="md:hidden mb-4 flex flex-col items-center">
-          <Link
-            href="/press"
-            className="inline-flex items-center gap-1 text-xs font-medium text-red-600 border border-red-300/70 rounded-full px-3 py-1 bg-white shadow-sm hover:bg-red-50 transition"
-          >
-            <span className="inline-block h-2 w-2 rounded-full bg-red-500" aria-hidden />
-            <span>News</span>
-            <span className="ml-1">→</span>
-          </Link>
-          <p className="mt-2 text-xs text-gray-500">
-            Latest company announcements and product launches.
-          </p>
-        </div>
+        {latest && (
+          <div className="md:hidden mb-4 flex flex-col items-center">
+            <Link
+              href="/press/stablecoin-payroll-415b-crypto-market"
+              className="flex flex-wrap items-center gap-2 rounded-full border border-neutral-300 bg-white px-3 py-2 text-[13px] leading-none shadow-sm hover:bg-neutral-50 transition"
+            >
+              <span className="flex items-center gap-1 text-red-500 font-medium">
+                <span className="inline-block h-[6px] w-[6px] rounded-full bg-red-500" />
+                <span>News</span>
+              </span>
+
+              <span className="text-neutral-800 font-medium truncate max-w-[180px] sm:max-w-[260px]">
+                {latest.title}
+              </span>
+
+              <span className="flex items-center gap-1 text-neutral-500">
+                <span className="inline-flex items-center rounded border border-neutral-300 bg-neutral-100 px-1.5 py-[2px] text-[11px] font-normal text-neutral-700 leading-none">
+                  {formattedDate}
+                </span>
+                <span className="inline-flex items-center rounded border border-neutral-300 bg-neutral-100 px-1.5 py-[2px] text-[11px] font-normal text-neutral-700 leading-none">
+                  {latest.region}
+                </span>
+              </span>
+
+              <span className="ml-auto hidden sm:inline-flex text-neutral-500 underline underline-offset-2">
+                View all
+              </span>
+            </Link>
+            <p className="mt-2 text-xs text-gray-500">
+              Latest company announcements and product launches.
+            </p>
+          </div>
+        )}
 
         <div className="mx-auto max-w-4xl py-8 pb-2 text-center sm:py-10 sm:pb-2">
           <motion.div

@@ -30,24 +30,25 @@ const resources = [
     icon: Newspaper, 
     description: 'News and announcements' 
   },
-  { 
-    label: 'Country Guides', 
-    href: '/country-guides', 
-    icon: Globe, 
-    description: 'Employment guides by country' 
-  },
-  { 
-    label: 'Network Coverage', 
-    href: '/resources/network-coverage', 
-    icon: Network, 
-    description: 'Global reach and coverage' 
-  },
-  { 
-    label: 'All Resources', 
-    href: '/resources', 
-    icon: Library, 
-    description: 'Complete resource library' 
-  },
+  // Temporarily hidden items - will be re-enabled when ready
+  // { 
+  //   label: 'Country Guides', 
+  //   href: '/country-guides', 
+  //   icon: Globe, 
+  //   description: 'Employment guides by country' 
+  // },
+  // { 
+  //   label: 'Network Coverage', 
+  //   href: '/resources/network-coverage', 
+  //   icon: Network, 
+  //   description: 'Global reach and coverage' 
+  // },
+  // { 
+  //   label: 'All Resources', 
+  //   href: '/resources', 
+  //   icon: Library, 
+  //   description: 'Complete resource library' 
+  // },
 ];
 
 export default function Navbar() {

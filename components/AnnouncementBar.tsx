@@ -1,7 +1,7 @@
 "use client";
 import Link from "next/link";
-import { useEffect, useState } from "react";
-import { PressItem } from "@/lib/press";
+import { pressReleases } from "@/data/pressReleases";
+import { formatPressDate } from "@/lib/formatDate";
 
 type Props = {
   showViewAll?: boolean;   // show "View all" at the end
@@ -23,8 +23,7 @@ function CalendarIcon(props: React.SVGProps<SVGSVGElement>) {
 }
 
 function DatePill({ iso, dark }: { iso: string; dark: boolean }) {
-  const d = new Date(iso);
-  const label = d.toLocaleDateString(undefined, { month: "short", day: "numeric" }); // e.g., Oct 1
+  const label = formatPressDate(iso);
 
   const pillSurface = dark
     ? "bg-white/10 text-white/80"
@@ -44,16 +43,9 @@ export default function AnnouncementBar({
   className,
   darkSurface = true,
 }: Props) {
-  const [item, setItem] = useState<PressItem | null>(null);
+  const latest = pressReleases[0]; // assume array is already newest-first
 
-  useEffect(() => {
-    fetch("/api/press/latest")
-      .then((r) => r.json())
-      .then((arr) => setItem(arr?.items?.[0] ?? null))
-      .catch(() => setItem(null));
-  }, []);
-
-  if (!item) return null;
+  if (!latest) return null;
 
   const surface = darkSurface
     ? "backdrop-blur-sm bg-[#0F172A]/90 text-white border-white/15 ring-white/10 hover:-translate-y-[1px] hover:shadow-md focus-visible:ring-2 focus-visible:ring-white/30 transition"
@@ -73,9 +65,9 @@ export default function AnnouncementBar({
           >
             {/* main link */}
             <Link
-              href={`/press/${item.slug}`}
+              href="/press/stablecoin-payroll-415b-crypto-market"
               className="flex min-w-0 items-center gap-2 outline-none"
-              aria-label={`Open press: ${item.title}`}
+              aria-label={`Open press: ${latest.title}`}
             >
               <Dot />
               <span className="font-satoshi text-[12px] font-medium opacity-90 shrink-0">
@@ -83,16 +75,16 @@ export default function AnnouncementBar({
               </span>
               <span
                 className="font-satoshi text-[12px] opacity-85 overflow-hidden text-ellipsis whitespace-nowrap max-w-[64ch]"
-                title={item.title}
+                title={latest.title}
               >
-                {item.title}
+                {latest.title}
               </span>
             </Link>
 
             {/* date pill */}
             {showDate && (
               <span className="hidden sm:inline">
-                <DatePill iso={item.date} dark={darkSurface} />
+                <DatePill iso={latest.publishedAt} dark={darkSurface} />
               </span>
             )}
 
