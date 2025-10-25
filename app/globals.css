@@ -53,35 +53,8 @@
     text-rendering: optimizeLegibility;
   }
   
-  html {
-    /* Prevent horizontal scrolling on mobile */
-    overflow-x: hidden;
-    /* Ensure proper mobile viewport */
-    -webkit-text-size-adjust: 100%;
-    -ms-text-size-adjust: 100%;
-  }
-  
   body {
     @apply bg-white text-near-black;
-    /* Prevent horizontal scrolling on mobile */
-    overflow-x: hidden;
-    /* Ensure proper mobile scrolling */
-    -webkit-overflow-scrolling: touch;
-    /* Prevent zoom on input focus on iOS */
-    -webkit-text-size-adjust: 100%;
-  }
-  
-  /* Fix mobile scrolling issues */
-  * {
-    /* Prevent horizontal scrolling */
-    max-width: 100%;
-    box-sizing: border-box;
-  }
-  
-  /* Ensure all containers respect mobile boundaries */
-  main, section, div {
-    max-width: 100vw;
-    overflow-x: hidden;
   }
 }
 
@@ -178,21 +151,7 @@ html {
 @media (max-width: 768px) {
   /* Ensure proper mobile scrolling */
   body {
-    position: relative;
     overflow-x: hidden;
-    -webkit-overflow-scrolling: touch;
-  }
-  
-  /* Fix any elements that might cause horizontal scrolling */
-  * {
-    max-width: 100vw;
-    box-sizing: border-box;
-  }
-  
-  /* Ensure main content is scrollable */
-  main {
-    overflow-x: hidden;
-    overflow-y: auto;
     -webkit-overflow-scrolling: touch;
   }
   
