@@ -50,7 +50,7 @@ export function generateSchema(config: SchemaConfig) {
   // Generate breadcrumbs if not provided
   const breadcrumbs = config.breadcrumbs || generateDefaultBreadcrumbs(config.path);
 
-  const schema = [
+  const schema: any[] = [
     // 1. WebPage - Enhanced with organization info
     {
       "@context": "https://schema.org",
