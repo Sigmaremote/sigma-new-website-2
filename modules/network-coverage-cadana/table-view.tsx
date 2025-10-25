@@ -22,7 +22,7 @@ export default function CountryTableView({ c }: { c: CoverageCountry }) {
         </Block>
         <BlockGrid>
           <KV label="Local Payout Limits" value={c.payoutLimits ?? "None"} />
-          <KV label="Payout Cutoff Times" value={c.payoutCutoff ?? "1–2 days"} />
+          <KV label="Payout Cutoff Times" value={c.payoutCutoff ?? "1-2 days"} />
         </BlockGrid>
       </SectionSimple>
 

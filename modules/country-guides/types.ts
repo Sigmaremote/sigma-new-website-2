@@ -3,14 +3,14 @@ export type Region = "Africa" | "Asia" | "Europe" | "North America" | "South Ame
 export type AtAGlance = {
   currency: string;
   payrollCycle: string;
-  employerOnCostPct?: string; // e.g. "~25–28%"
+  employerOnCostPct?: string; // e.g. "~25-28%"
   annualLeaveDays?: number | string;
   publicHolidays?: number | string;
   hoursPerWeek?: number | string;
   thirteenthSalary: "Yes" | "No" | "Optional" | string;
   probationMax?: string;
   noticeSeveranceShort?: string;
-  onboardingTimeDays?: string; // e.g. "1–3"
+  onboardingTimeDays?: string; // e.g. "1-3"
 };
 
 export type CostRow = {
@@ -42,7 +42,7 @@ export type CountryGuideIndexItem = {
   capital?: string;
   currency?: string;
   language?: string;
-  employerOnCostHint?: string; // e.g. "~25–30%"
+  employerOnCostHint?: string; // e.g. "~25-30%"
   payrollCycleHint?: string;   // e.g. "Semi-monthly"
   requires13th?: boolean;      // quick icon flag
   flagEmoji?: string;          // 🇲🇽
@@ -74,7 +74,7 @@ export type CountryGuideContent = {
   };
   employerCostsIntro: string;    // disclaimer; no Sigma fees
   costTable: CostRow[];
-  complianceBullets: string[];   // 5–7 bullets
+  complianceBullets: string[];   // 5-7 bullets
   benefitsPackage?: string[];
   countryStats?: {
     capital: string;
@@ -85,7 +85,7 @@ export type CountryGuideContent = {
   misclassificationRisks?: string;
   payingWorkers: string;         // ops flow; no fees
   uxRows: UXRow[];               // 5 rows
-  faq: FaqQA[];                  // 5–7 Q&A
+  faq: FaqQA[];                  // 5-7 Q&A
   lastUpdatedISO: string;
   ogImage?: string;
 };

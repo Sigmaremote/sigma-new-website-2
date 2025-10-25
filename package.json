@@ -6,7 +6,10 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "validate:schema": "ts-node lib/validateSchema.ts",
+    "check:typography": "grep -r '[—–]' --include='*.ts' --include='*.tsx' --include='*.md' --include='*.mdx' . || true",
+    "validate:all": "npm run validate:schema && npm run check:typography"
   },
   "dependencies": {
     "@radix-ui/react-slot": "^1.2.3",
@@ -34,9 +37,11 @@
     "autoprefixer": "^10.0.1",
     "eslint": "^8",
     "eslint-config-next": "14.0.4",
+    "glob": "^10.3.10",
     "postcss": "^8",
     "prettier": "^3.1.0",
     "tailwindcss": "^3.3.0",
+    "ts-node": "^10.9.1",
     "typescript": "^5"
   }
 }

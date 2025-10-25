@@ -188,7 +188,7 @@ export const countryContent: Record<string, CountryGuideContent> = {
         scenario: 'Software Engineer',
         grossUSDExample: 37000,
         employerOnCostPct: '29-32%',
-        monthlyEmployerTotalUSD: '$47,730–$48,840',
+        monthlyEmployerTotalUSD: '$47,730-$48,840',
         timeToOnboard: '5 days',
         notes: 'SS 21%, 13th month 8.33%, risks 0.522%'
       },
@@ -196,7 +196,7 @@ export const countryContent: Record<string, CountryGuideContent> = {
         scenario: 'Project Manager',
         grossUSDExample: 30000,
         employerOnCostPct: '29-32%',
-        monthlyEmployerTotalUSD: '$38,700–$39,600',
+        monthlyEmployerTotalUSD: '$38,700-$39,600',
         timeToOnboard: '5 days',
         notes: 'Excludes integral salaries (>COP 18.5M)'
       },
@@ -204,7 +204,7 @@ export const countryContent: Record<string, CountryGuideContent> = {
         scenario: 'Customer Support',
         grossUSDExample: 18000,
         employerOnCostPct: '29-32%',
-        monthlyEmployerTotalUSD: '$23,220–$23,760',
+        monthlyEmployerTotalUSD: '$23,220-$23,760',
         timeToOnboard: '5 days',
         notes: 'Standard benefits package with full compliance'
       }

@@ -203,11 +203,11 @@ function CountryDetailHero({
           </div>
           <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 border border-white/20">
             <div className="text-sm text-white/70 mb-1">Avg. Settlement</div>
-            <div className="text-3xl font-bold">{payoutCutoff ?? "1–2 days"}</div>
+            <div className="text-3xl font-bold">{payoutCutoff ?? "1-2 days"}</div>
           </div>
           <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 border border-white/20">
             <div className="text-sm text-white/70 mb-1">FX Fee</div>
-            <div className="text-3xl font-bold">0–1%</div>
+            <div className="text-3xl font-bold">0-1%</div>
           </div>
         </div>
       </div>

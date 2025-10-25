@@ -4,7 +4,7 @@ import { cn } from "@/lib/utils";
 type Props = React.HTMLAttributes<HTMLHeadingElement | HTMLParagraphElement>;
 
 export function HeroTitle({ className, ...props }: Props) {
-  // Desktop ≈ 56–60px, mobile smaller; tight line-height.
+  // Desktop ≈ 56-60px, mobile smaller; tight line-height.
   return (
     <h1
       className={cn(

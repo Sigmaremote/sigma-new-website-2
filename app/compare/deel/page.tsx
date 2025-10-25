@@ -9,6 +9,7 @@ import { COMPARE_DATA } from "../_data/compare-data";
 import Script from "next/script";
 import FadeIn from "../_components/FadeIn";
 import AnimatedSection from "../_components/AnimatedSection";
+import { generateComparisonSchema } from "@/lib/generateSchema";
 
 export const dynamic = "force-static";
 
@@ -29,38 +30,17 @@ export const metadata: Metadata = {
 export default function Page() {
   const d = COMPARE_DATA["deel"];
   
-  const json = [
-    {
-      "@context": "https://schema.org",
-      "@type": "WebPage",
-      "name": "SigmaRemote vs Deel - comparison",
-      "url": "https://sigmaremote.com/compare/deel"
-    },
-    {
-      "@context": "https://schema.org",
-      "@type": "BreadcrumbList",
-      "itemListElement": [
-        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://sigmaremote.com/" },
-        { "@type": "ListItem", "position": 2, "name": "Compare", "item": "https://sigmaremote.com/compare" },
-        { "@type": "ListItem", "position": 3, "name": "Deel", "item": "https://sigmaremote.com/compare/deel" }
-      ]
-    },
-    {
-      "@context": "https://schema.org",
-      "@type": "Article",
-      "headline": "SigmaRemote vs Deel - Lower Costs, Faster Global Payroll",
-      "datePublished": "2025-10-14T00:00:00+02:00",
-      "mainEntityOfPage": { "@type": "WebPage", "@id": "https://sigmaremote.com/compare/deel" },
-      "author": { "@type": "Person", "name": "SigmaRemote", "url": "https://sigmaremote.com" },
-      "publisher": { "@type": "Organization", "name": "SigmaRemote" },
-      "image": "https://sigmaremote.com/og-compare-deel.jpg",
-      "inLanguage": "en"
-    }
-  ];
+  // Generate schema using the new utility
+  const schema = generateComparisonSchema(
+    "SigmaRemote vs Deel - Lower Costs, Faster Global Payroll",
+    "/compare/deel",
+    "See why scaling teams choose SigmaRemote over Deel for predictable costs, faster onboarding, and flexible USD wallet payouts.",
+    { competitor: "Deel" }
+  );
 
   return (
     <main className="overflow-x-hidden w-full">
-      <Script id="ld-compare-deel" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(json) }} />
+      <Script id="ld-compare-deel" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
       <FadeIn>
         <AnimatedSection animation="fadeUp" delay={0}>
           <CompareHero competitorKey="deel" />

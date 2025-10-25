@@ -1,0 +1,20 @@
+#!/usr/bin/env sh
+. "$(dirname -- "$0")/_/husky.sh"
+
+# Run schema validation before commit
+echo "🔍 Validating SEO/LLMO structure..."
+
+# Check for em dashes
+if grep -r '[—–]' --include='*.ts' --include='*.tsx' --include='*.md' --include='*.mdx' .; then
+  echo "❌ Found em dashes (— or –) in content. Please replace with regular hyphens (-)."
+  echo "Run: npm run check:typography"
+  exit 1
+fi
+
+# Validate schema structure
+if ! npm run validate:schema; then
+  echo "❌ Schema validation failed. Please fix schema issues before committing."
+  exit 1
+fi
+
+echo "✅ All validations passed - proceeding with commit"

@@ -5,8 +5,8 @@ The launch targets Latin America's $415 billion crypto market - representing 9.1
 ## Traditional Banking Costs Businesses $1,950+ Per Contractor Annually
 
 - SWIFT transfers to LATAM average $65+ per transaction with 48-hour delays
-- Traditional remittances cost 1.5–2.9% in fees plus extended processing times
-- Stablecoins settle in seconds for $0.01–$1 per transaction
+- Traditional remittances cost 1.5-2.9% in fees plus extended processing times
+- Stablecoins settle in seconds for $0.01-$1 per transaction
 
 > "Banking infrastructure hasn't caught up to Latin America's digital-first workforce," said Kevin Jaspal, CEO of SigmaRemote.
 > "While Lemon saw 61% growth in USDC holdings across Argentina, Peru, and Brazil, businesses still lose thousands per contractor on outdated payment rails."
@@ -18,7 +18,7 @@ SigmaRemote's USDC payroll leverages Circle's regulated stablecoin with $60+ bil
 The solution provides:
 
 - ✅ Instant settlement: 24/7 payment processing vs. banking business hours
-- ✅ 99% fee reduction: $0.01–$1 blockchain fees vs. 1.5–2.9% SWIFT charges
+- ✅ 99% fee reduction: $0.01-$1 blockchain fees vs. 1.5-2.9% SWIFT charges
 - ✅ 20% higher contractor satisfaction: PWC research shows crypto payroll improves retention rates
 - ✅ 5-minute onboarding: WhatsApp/Telegram contractor setup vs. week-long bank account verification
 

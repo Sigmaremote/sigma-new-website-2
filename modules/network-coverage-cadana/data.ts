@@ -76,7 +76,7 @@ export const coverageCadanaCountries: CoverageCountry[] = [
     flag: "🇿🇦",
     solutions: ["Contractor Pay", "AOR (Agent of Record)"],
     paymentSupported: ["Local Bank Transfer", "USD Wallet", "USDC", "USDT", "Card Payout"],
-    payoutCutoff: "1–2 days",
+    payoutCutoff: "1-2 days",
     walletOfferings: ["Card", "Foreign Bank Accounts"],
   },
   {
@@ -86,7 +86,7 @@ export const coverageCadanaCountries: CoverageCountry[] = [
     flag: "🇪🇬",
     solutions: ["Contractor Pay", "AOR (Agent of Record)"],
     paymentSupported: ["Local Bank Transfer", "USD Wallet", "USDC", "USDT"],
-    payoutCutoff: "1–2 days",
+    payoutCutoff: "1-2 days",
   },
 
   // ASIA
@@ -97,7 +97,7 @@ export const coverageCadanaCountries: CoverageCountry[] = [
     flag: "🇵🇭",
     solutions: ["Contractor Pay", "AOR (Agent of Record)"],
     paymentSupported: ["Local Bank Transfer", "USD Wallet", "USDC", "USDT", "Card Payout"],
-    payoutCutoff: "1–2 days",
+    payoutCutoff: "1-2 days",
   },
   {
     name: "India",
@@ -106,7 +106,7 @@ export const coverageCadanaCountries: CoverageCountry[] = [
     flag: "🇮🇳",
     solutions: ["Contractor Pay", "AOR (Agent of Record)"],
     paymentSupported: ["Local Bank Transfer", "USD Wallet"],
-    payoutCutoff: "1–2 days",
+    payoutCutoff: "1-2 days",
   },
   {
     name: "Indonesia",

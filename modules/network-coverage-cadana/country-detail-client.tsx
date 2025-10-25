@@ -21,8 +21,8 @@ export default function CountryDetailClient({ country }: { country: CoverageCoun
         <p className="mt-1 text-sm text-white/80">{country.region}</p>
         <div className="mt-4 grid grid-cols-1 sm:grid-cols-3 gap-3">
           <Stat label="Payout Rails" value={(country.paymentSupported?.length ?? 0).toString()} />
-          <Stat label="Avg. Settlement" value={country.payoutCutoff ?? "1–2 days"} />
-          <Stat label="FX Fee" value="0–1 %" />
+          <Stat label="Avg. Settlement" value={country.payoutCutoff ?? "1-2 days"} />
+          <Stat label="FX Fee" value="0-1 %" />
         </div>
       </section>
 

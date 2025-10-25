@@ -205,10 +205,10 @@ export function BlogPostLayout({ data }: { data: BlogPostData }) {
 /**
  * 🔒 TEMPLATE RULES (globalno važe za sve blogove)
  * 1) H1 + subtitle + meta → obavezno.
- * 2) Intro (2–4 pasusa) → obavezno.
+ * 2) Intro (2-4 pasusa) → obavezno.
  * 3) CostTable i/ili UXTable → bar jedan obavezno; oba preporučeno.
  * 4) Srednji CTA blok → obavezno.
  * 5) Body sekcije (H2 + paragrafi) → opciono, ali strukturisano.
- * 6) FAQ (3–5 Q&A) → preporučeno; puni JSON-LD.
+ * 6) FAQ (3-5 Q&A) → preporučeno; puni JSON-LD.
  * 7) JSON-LD uvek: [WebPage, BreadcrumbList, Article, FAQPage].
  */

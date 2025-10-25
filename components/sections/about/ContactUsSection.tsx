@@ -84,7 +84,7 @@ export default function ContactUsSection() {
             </motion.div>
           </div>
 
-          {/* RIGHT SIDE – Cal.com Calendar */}
+          {/* RIGHT SIDE - Cal.com Calendar */}
           <motion.div
             initial={{ opacity: 0, y: 8 }}
             whileInView={{ opacity: 1, y: 0 }}
