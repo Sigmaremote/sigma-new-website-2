@@ -65,8 +65,9 @@ const resourceLinks = [
   { text: 'Blog', href: routes.blog },
   { text: 'Glossary', href: '/glossary' },
   { text: 'Press', href: routes.press, hasIndicator: true },
-  { text: 'Country Guides', href: routes.countryGuides },
-  { text: 'Network Coverage', href: '/resources/network-coverage' },
+  // Temporarily hidden items - will be re-enabled when ready
+  // { text: 'Country Guides', href: routes.countryGuides },
+  // { text: 'Network Coverage', href: '/resources/network-coverage' },
 ];
 
 const legalLinks = [
