@@ -50,33 +50,38 @@ export default function HeroCopy() {
           <AnnouncementBar darkSurface={false} showViewAll />
         </div>
 
-        {/* Mobile news pill - Clean & Simple */}
+        {/* Mobile news pill */}
         {latest && (
-          <div className="md:hidden mb-6 flex flex-col items-center">
+          <div className="md:hidden mb-4 flex flex-col items-center">
             <Link
               href="/press/stablecoin-payroll-415b-crypto-market"
-              className="group flex items-center gap-3 rounded-xl border border-gray-200 bg-white px-4 py-3 text-sm shadow-sm hover:shadow-md hover:border-gray-300 transition-all duration-200 w-full max-w-sm"
+              className="flex flex-wrap items-center gap-2 rounded-full border border-neutral-300 bg-white px-3 py-2 text-[13px] leading-none shadow-sm hover:bg-neutral-50 transition"
             >
-              <div className="flex items-center gap-2">
-                <span className="inline-block h-2 w-2 rounded-full bg-red-500" />
-                <span className="text-red-600 font-medium text-xs">NEWS</span>
-              </div>
-              
-              <div className="flex-1 min-w-0">
-                <p className="text-gray-900 font-medium text-sm leading-tight truncate">
-                  {latest.title}
-                </p>
-                <p className="text-gray-500 text-xs mt-0.5">
-                  {formattedDate} • {latest.region}
-                </p>
-              </div>
-              
-              <div className="text-gray-400 group-hover:text-gray-600 transition-colors">
-                <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                </svg>
-              </div>
+              <span className="flex items-center gap-1 text-red-500 font-medium">
+                <span className="inline-block h-[6px] w-[6px] rounded-full bg-red-500" />
+                <span>News</span>
+              </span>
+
+              <span className="text-neutral-800 font-medium truncate max-w-[180px] sm:max-w-[260px]">
+                {latest.title}
+              </span>
+
+              <span className="flex items-center gap-1 text-neutral-500">
+                <span className="inline-flex items-center rounded border border-neutral-300 bg-neutral-100 px-1.5 py-[2px] text-[11px] font-normal text-neutral-700 leading-none">
+                  {formattedDate}
+                </span>
+                <span className="inline-flex items-center rounded border border-neutral-300 bg-neutral-100 px-1.5 py-[2px] text-[11px] font-normal text-neutral-700 leading-none">
+                  {latest.region}
+                </span>
+              </span>
+
+              <span className="ml-auto hidden sm:inline-flex text-neutral-500 underline underline-offset-2">
+                View all
+              </span>
             </Link>
+            <p className="mt-2 text-xs text-gray-500">
+              Latest company announcements and product launches.
+            </p>
           </div>
         )}
 
