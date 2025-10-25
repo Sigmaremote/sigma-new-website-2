@@ -10,7 +10,7 @@ export default function FadeIn({ children }: { children: React.ReactNode }) {
   }, []);
 
   return (
-    <div className={`transition-opacity duration-300 motion-reduce:transition-none ${ready ? "opacity-100" : "opacity-0"}`}>
+    <div className={`transition-opacity duration-300 motion-reduce:transition-none overflow-x-hidden ${ready ? "opacity-100" : "opacity-0"}`}>
       {children}
     </div>
   );

@@ -13,12 +13,15 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
+      <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+      </head>
       <body className={cn(
         // Enforce Satoshi globally
-        'font-satoshi antialiased min-h-screen bg-white text-black'
+        'font-satoshi antialiased min-h-screen bg-white text-black overflow-x-hidden'
       )}>
         <Header />
-        <main className="min-h-[60vh]">{children}</main>
+        <main className="min-h-[60vh] overflow-x-hidden">{children}</main>
         <GlobalTeamCTA />
         <Footer />
       </body>

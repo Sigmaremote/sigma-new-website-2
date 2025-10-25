@@ -37,7 +37,7 @@ export default function AnimatedSection({
     <div
       ref={ref}
       className={cn(
-        "transition-all duration-700 ease-out motion-reduce:transition-none",
+        "transition-all duration-700 ease-out motion-reduce:transition-none overflow-x-hidden",
         isVisible ? visibleClasses[animation] : animationClasses[animation],
         className
       )}
