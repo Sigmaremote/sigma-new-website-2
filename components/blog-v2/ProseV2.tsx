@@ -19,8 +19,10 @@ export function ProseV2({children}:{children:React.ReactNode}) {
         // Lists (and nested elements) - neutral spacing + readable line-height
         "[&_ul]:my-5 [&_ol]:my-5 [&_li]:my-1.5 [&_li]:leading-[1.6] [&_ul]:pl-5 [&_ol]:pl-5 [&_ul]:list-disc [&_ol]:list-decimal",
 
-        // Links + strong
+        // Links + strong (exclude CTA buttons)
         "[&_a]:text-[#0041C4] hover:[&_a]:underline [&_strong]:text-[#1A1A18]",
+        // Override for CTA buttons to prevent underlines
+        "[&_a[class*='bg-']]:hover:no-underline [&_a[class*='rounded-']]:hover:no-underline",
 
         // Blockquote (light, elegant)
         "[&_blockquote]:border-l-2 [&_blockquote]:pl-4 [&_blockquote]:italic [&_blockquote]:text-[17px] [&_blockquote]:leading-[1.7] [&_blockquote]:text-[#3B3A38]/85",

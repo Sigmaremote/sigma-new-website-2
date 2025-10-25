@@ -33,9 +33,7 @@ export default function BusinessFeatures() {
       image: "/landing-page-images/Sigma is designed for businesses part/image3.avif",
       alt: "Master IRS Compliance - Manage W-8BEN forms and ITIN requirements with AI",
       title: "Master IRS Compliance",
-      description: "We manage W-8BEN forms for foreign contractors and use AI to check for US ITINs to handle W-7 requirements.",
-      linkText: "Learn more about W-8BEN compliance",
-      linkUrl: "/glossary/w-8ben"
+      description: "We manage W-8BEN forms for foreign contractors and use AI to check for US ITINs to handle W-7 requirements."
     }
   ];
 

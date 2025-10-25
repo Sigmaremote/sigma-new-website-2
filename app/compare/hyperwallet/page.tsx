@@ -59,7 +59,7 @@ export default function Page() {
   ];
 
   return (
-    <>
+    <main className="overflow-x-hidden w-full">
       <Script id="ld-compare-hyperwallet" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(json) }} />
       <FadeIn>
         <AnimatedSection animation="fadeUp" delay={0}>
@@ -93,7 +93,7 @@ export default function Page() {
         </AnimatedSection>
         {/* Next sections will be added below (CTA). */}
       </FadeIn>
-    </>
+    </main>
   );
 }
 

@@ -8,7 +8,6 @@ import Hero from './_components/Hero';
 import Article from './_components/Article';
 import MetaBlock from './_components/MetaBlock';
 import ShareRow from './_components/ShareRow';
-import NewsCTA from './_components/NewsCTA';
 
 interface PressReleasePageProps {
   params: {
@@ -129,16 +128,10 @@ export default async function PressReleasePage({ params }: PressReleasePageProps
             {/* Main Content */}
             <div className="space-y-10">
               <div className="mt-8">
-                <ShareRow title={article.title} url={canonicalUrl} />
-              </div>
-              
-              <div className="mt-8">
                 <Article content={content} />
               </div>
               
               <MetaBlock />
-              
-              <NewsCTA />
             </div>
 
             {/* Sidebar */}

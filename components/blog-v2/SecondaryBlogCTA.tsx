@@ -17,7 +17,7 @@ export function SecondaryBlogCTA({
   title = 'Compare live pricing',
   description = 'See how much your team can save in real markets with transparent FX.',
   ctaLabel = 'Book a demo',
-  ctaHref = '/contact',
+  ctaHref = 'https://cal.com/globalpayroll/demo-25',
   className = '',
 }: SecondaryBlogCTAProps) {
   return (

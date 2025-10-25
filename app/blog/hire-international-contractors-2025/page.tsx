@@ -6,7 +6,7 @@ import { BlogV2Article, type BlogV2Data } from "@/components/blog-v2/BlogV2Artic
 const DATA: BlogV2Data = {
   title: "How to Hire International Contractors in 2025 (Without the Legal Headaches)",
   dek: "A step-by-step guide to hiring global talent compliantly - without FX fees, misclassification risks, or payroll delays.",
-  lastUpdate: "2025-01-15",
+  lastUpdate: "2025-07-15",
   coverImage: { src:"/Blog%20images/How%20to%20Hire%20International%20Contractors%20in%202025%20(Without%20the%20Legal%20Headaches)%20-%20Images/how-to-hire-blog-image.jpg", alt:"Hire International Contractors", width:960, height:640 },
   keyTakeaways: [
     "By 2027, over 86.5 million Americans will be freelancers, representing more than 50% of the U.S. workforce.",
@@ -22,7 +22,7 @@ const DATA: BlogV2Data = {
       title: 'Build your international team with SigmaRemote',
       description: 'Hire, onboard, and pay contractors worldwide - without FX fees, misclassification risks, or compliance headaches.',
       ctaLabel: 'Book a demo',
-      ctaHref: '/book-demo',
+      ctaHref: '/contact',
       imageSrc: '/landing-page-images/Repeatable%20CTA%20above%20the%20footer%20part/image1.1.avif',
       imageAlt: 'SigmaRemote platform interface'
     },
@@ -73,7 +73,7 @@ const DATA: BlogV2Data = {
       title: 'Hire contractors without legal headaches',
       description: 'See how SigmaRemote automates onboarding, documentation, and local compliance across 180+ countries.',
       ctaLabel: 'Book a demo',
-      ctaHref: '/book-demo'
+      ctaHref: '/contact'
     },
     { type: 'actionable-tip', text: 'Include IP assignment clauses in your agreements to ensure all work produced belongs to your business.' },
     { type: 'h3', text: 'Data Security Compliance' },
@@ -106,7 +106,7 @@ const DATA: BlogV2Data = {
     { type: 'p', text: 'By understanding the benefits, addressing the challenges, and prioritizing compliance, you\'ll set yourself up for success in global hiring.' },
     { type: 'p', text: 'Managing the complexities of international hiring doesn\'t have to be overwhelming. Tools like <strong>SigmaRemote</strong> empower businesses to hire, pay, and manage international contractors with ease while ensuring compliance every step of the way.' },
     { type: 'h2', text: 'Ready to Build Your Global Workforce?' },
-    { type: 'p', text: 'Get Started Today: <a href="https://cal.com/globalpayroll/demo-25" class="text-[#0041C4] hover:underline">Book a demo</a>' },
+    { type: 'p', text: 'Get Started Today: <a href="https://cal.com/globalpayroll/demo-25" class="text-[#0041C4] hover:no-underline">Book a demo</a>' },
     { type: 'p', text: 'Take the first step toward building a global workforce. With the right strategies and solutions, you can access the best talent worldwide. Don\'t wait - start unlocking global opportunities today.' },
   ],
 };
@@ -116,8 +116,8 @@ export const metadata: Metadata = generateSEOMetadata({
   description: 'A step-by-step guide to hiring global talent compliantly - without FX fees, misclassification risks, or payroll delays.',
   url: '/blog/hire-international-contractors-2025',
   type: 'article',
-  publishedTime: '2025-01-15T00:00:00+00:00',
-  modifiedTime: '2025-01-15T00:00:00+00:00',
+  publishedTime: '2025-07-15T00:00:00+00:00',
+  modifiedTime: '2025-07-15T00:00:00+00:00',
   author: 'Sigma Team',
   keywords: [
     'hire international contractors',
@@ -163,8 +163,8 @@ export default function Page() {
     description: 'A step-by-step guide to hiring global talent compliantly - without FX fees, misclassification risks, or payroll delays.',
     url: 'https://sigmaremote.com/blog/hire-international-contractors-2025',
     image: 'https://sigmaremote.com/landing-page-images/og-image.avif',
-    publishedTime: '2025-01-15T00:00:00+00:00',
-    modifiedTime: '2025-01-15T00:00:00+00:00',
+    publishedTime: '2025-07-15T00:00:00+00:00',
+    modifiedTime: '2025-07-15T00:00:00+00:00',
     faq: faqData,
     breadcrumbs: [
       { name: 'Home', url: 'https://sigmaremote.com/' },

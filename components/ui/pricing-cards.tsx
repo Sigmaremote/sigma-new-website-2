@@ -78,7 +78,7 @@ function Pricing() {
                     </div>
                   </div>
                   <Button variant="outline" className="gap-4" asChild>
-                    <Link href="/contact">
+                    <Link href="https://onboarding.sigmaremote.com/setup/">
                       Get Started <MoveRight className="w-4 h-4" />
                     </Link>
                   </Button>
@@ -137,7 +137,7 @@ function Pricing() {
                     </div>
                   </div>
                   <Button className="gap-4" asChild>
-                    <Link href="/contact">
+                    <Link href="https://onboarding.sigmaremote.com/setup/">
                       Get Started <MoveRight className="w-4 h-4" />
                     </Link>
                   </Button>

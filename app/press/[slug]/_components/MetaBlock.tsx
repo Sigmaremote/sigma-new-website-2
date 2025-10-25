@@ -19,10 +19,10 @@ export default function MetaBlock() {
           <div className="flex items-center gap-3">
             <Mail className="size-4 text-neutral-500" />
             <a 
-              href="mailto:press@sigmaremote.com" 
+              href="mailto:kevin@sigmaremote.com" 
               className="font-satoshi text-neutral-900 font-medium hover:text-neutral-700 transition-colors"
             >
-              press@sigmaremote.com
+              kevin@sigmaremote.com
             </a>
           </div>
           

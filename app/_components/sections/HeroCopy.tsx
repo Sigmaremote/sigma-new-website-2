@@ -46,14 +46,18 @@ export default function HeroCopy() {
         </div>
 
         {/* Mobile news pill */}
-        <div className="md:hidden mb-4 flex justify-center">
+        <div className="md:hidden mb-4 flex flex-col items-center">
           <Link
             href="/press"
-            className="inline-flex items-center gap-2 rounded-full border border-red-300/70 bg-white px-3 py-1 text-xs font-medium text-red-600 shadow-sm"
+            className="inline-flex items-center gap-1 text-xs font-medium text-red-600 border border-red-300/70 rounded-full px-3 py-1 bg-white shadow-sm hover:bg-red-50 transition"
           >
             <span className="inline-block h-2 w-2 rounded-full bg-red-500" aria-hidden />
             <span>News</span>
+            <span className="ml-1">→</span>
           </Link>
+          <p className="mt-2 text-xs text-gray-500">
+            Latest company announcements and product launches.
+          </p>
         </div>
 
         <div className="mx-auto max-w-4xl py-8 pb-2 text-center sm:py-10 sm:pb-2">
@@ -105,7 +109,7 @@ export default function HeroCopy() {
               <Button 
                 variant="primary" 
                 size="lg" 
-                href={routes?.contact ?? '/contact'}
+                href="https://cal.com/globalpayroll/demo-25"
               >
                 Get a Free Payroll Setup <span aria-hidden="true" className="ml-2">→</span>
               </Button>
@@ -118,7 +122,7 @@ export default function HeroCopy() {
               <Button 
                 variant="ghost" 
                 size="lg" 
-                href="/signup"
+                href="https://onboarding.sigmaremote.com/?_gl=1*8gdxz9*_ga*MzI0NjE3NjQ2LjE3NjA4NzA0MDc.*_ga_YJ5CRJLVDM*czE3NjEzOTIxMjgkbzYkZzAkdDE3NjEzOTIxMjgkajYwJGwwJGgw*_ga_R8C5N354BT*czE3NjEzOTIxMjgkbzYkZzAkdDE3NjEzOTIxMjgkajYwJGwwJGgw"
               >
                 Create Account
               </Button>

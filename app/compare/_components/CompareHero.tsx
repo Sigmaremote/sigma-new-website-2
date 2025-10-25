@@ -56,7 +56,7 @@ function IncomeCard() {
 // Hero visual cluster component with responsive layout
 function HeroVisualCluster() {
   return (
-    <div className="relative w-full max-w-[320px] mx-auto pb-16 md:pb-0 md:max-w-none lg:max-w-[500px] lg:ml-8">
+    <div className="relative w-full max-w-[320px] mx-auto pb-16 md:pb-0 md:max-w-none lg:max-w-[500px] lg:ml-8 mt-10 lg:mt-0">
       {/* Background container with woman image */}
       <div className="relative aspect-[4/3] w-[90%] mx-auto rounded-xl overflow-hidden bg-gradient-to-br from-orange-100 to-pink-100">
         <Image
@@ -71,7 +71,7 @@ function HeroVisualCluster() {
       </div>
 
       {/* Remaining Budget card - same position for mobile and desktop */}
-      <div className="pointer-events-none absolute -right-8 -top-8 lg:-right-16 lg:-top-12">
+      <div className="pointer-events-none absolute right-4 -top-8 lg:-right-16 lg:-top-12">
         <RemainingBudgetCard />
       </div>
 
@@ -81,7 +81,7 @@ function HeroVisualCluster() {
       </div>
 
       {/* 30 Days Income card - mobile position (bottom-left with overlap) */}
-      <div className="pointer-events-none absolute block lg:hidden -left-8 -bottom-8 translate-y-[-60%]">
+      <div className="pointer-events-none absolute block lg:hidden left-4 -bottom-8 translate-y-[-60%]">
         <IncomeCard />
       </div>
 

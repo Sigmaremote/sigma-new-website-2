@@ -35,7 +35,7 @@ export default function GlobalTeamCTA() {
                   href="https://cal.com/globalpayroll/demo-25"
                   target="_blank"
                   aria-label="Get a Free Payroll Setup"
-                  className="inline-flex items-center gap-2 rounded-2xl bg-lime-300 px-4 py-2.5 text-sm font-semibold text-black shadow-sm transition hover:bg-lime-200"
+                  className="inline-flex items-center gap-2 rounded-2xl bg-[hsl(64,83%,65%)] px-4 py-2.5 text-sm font-semibold text-black shadow-sm transition hover:shadow-[0_6px_24px_rgba(0,0,0,0.12)]"
                 >
                   Get a Free Payroll Setup →
                 </Link>
@@ -83,7 +83,7 @@ export default function GlobalTeamCTA() {
                   href="https://cal.com/globalpayroll/demo-25"
                   target="_blank"
                   aria-label="Get a Free Payroll Setup"
-                  className="inline-flex items-center justify-center rounded-full bg-[#E8F843] px-5 py-3 text-sm font-semibold text-black shadow-sm ring-1 ring-black/10 hover:bg-[#CFF86A]"
+                  className="inline-flex items-center justify-center rounded-full bg-[hsl(64,83%,65%)] px-5 py-3 text-sm font-semibold text-black shadow-sm ring-1 ring-black/10 hover:shadow-[0_6px_24px_rgba(0,0,0,0.12)]"
                 >
                   Get a Free Payroll Setup <span aria-hidden className="ml-2">→</span>
                 </Link>

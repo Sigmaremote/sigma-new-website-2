@@ -53,16 +53,16 @@ const Press7 = ({
     },
     {
       id: "press-2",
-      title: "New! SigmaRemote Rolls Out Stablecoin Payroll Across LATAM's $415B Crypto Market",
+      title: "NEW!SigmaRemote Rolls Out Flat-Fee USD Payroll Across El Salvador, Panama & Costa Rica - No FX Markups, Ever",
       summary:
-        "USDC payroll now live across LATAM – saving businesses 99% on transfer fees and paying contractors in seconds.",
+        "USDC payroll now live across LATAM - enabling instant, dollar-based payouts and dramatically reducing transfer costs.",
       category: "Product Launch",
       location: "GLOBAL",
       published: "21 Jul 2025",
       url: "/press/stablecoin-payroll-latam",
       image: "https://images.unsplash.com/photo-1639762681485-074b7f938ba0?w=800&h=450&fit=crop&crop=center",
       dateline: "GLOBAL - July 21, 2025",
-      leadParagraph: "SigmaRemote launched instant USDC stablecoin payroll across Latin America, eliminating $65+ traditional banking fees and 48-hour payment delays for businesses hiring remote contractors."
+      leadParagraph: "SigmaRemote, a global payroll automation platform, launched USD payroll corridors in El Salvador, Panama, and Costa Rica. The service eliminates foreign exchange fees and reduces contractor onboarding from days to minutes for businesses hiring Latin American talent."
     },
   ],
 }: Press7Props) => {
@@ -84,7 +84,7 @@ const Press7 = ({
           </p>
           <Button 
             variant="link" 
-            className="w-full sm:w-auto text-sigma-lime hover:text-deep-green" 
+            className="w-full sm:w-auto text-near-black hover:text-deep-green" 
             asChild
           >
             <a href={buttonUrl}>
@@ -165,7 +165,7 @@ const Press7 = ({
         <div className="mt-12 text-center">
           <Button 
             variant="outline" 
-            className="border-deep-green text-deep-green hover:bg-deep-green hover:text-white px-8 py-3 text-lg font-semibold rounded-full transition-all duration-200"
+            className="border-near-black text-near-black hover:bg-near-black hover:text-white px-8 py-3 text-lg font-semibold rounded-full transition-all duration-200"
             asChild
           >
             <a href={buttonUrl}>

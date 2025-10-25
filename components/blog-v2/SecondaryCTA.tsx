@@ -18,7 +18,7 @@ export function SecondaryCTA({
   title = 'Compare live pricing',
   description = 'See how much your team can save on real corridors.',
   ctaLabel = 'Book a demo',
-  ctaHref = '/contact',
+  ctaHref = 'https://cal.com/globalpayroll/demo-25',
   className = '',
 }: SecondaryCTAProps) {
   const sectionRef = useRef(null);

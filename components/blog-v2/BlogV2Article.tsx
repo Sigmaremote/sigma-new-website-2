@@ -60,6 +60,14 @@ export function BlogV2Article({ data }: { data: BlogV2Data }) {
 
   return (
     <article className="mx-auto max-w-[1200px] px-4 md:px-6">
+      {/* Back to blogs navigation */}
+      <div className="mt-8 mb-6">
+        <Link href="/blog" className="inline-flex items-center text-sm text-gray-600 hover:text-gray-900 transition-colors">
+          <ArrowRight className="h-4 w-4 mr-1 rotate-180" />
+          Back to all blogs
+        </Link>
+      </div>
+
       <HeroSplitV2
         title={data.title}
         dek={data.dek}
