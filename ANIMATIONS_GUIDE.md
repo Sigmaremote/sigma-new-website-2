@@ -1,67 +1,67 @@
 # Animations Guide
 
-## Implementirane Animacije na Landing Page-u
+## Implemented Animations on Landing Page
 
-Sve animacije su implementirane korišćenjem **Framer Motion** biblioteke, prateći najbolje prakse za savremene web animacije.
+All animations are implemented using the **Framer Motion** library, following best practices for modern web animations.
 
-### 🎨 Principi Dizajna
+### 🎨 Design Principles
 
-1. **Smooth Easing** - Korišćenje custom cubic-bezier funkcije `[0.22, 1, 0.36, 1]` za prirodan, profesionalan flow
-2. **Scroll-Triggered** - Većina animacija se aktivira kada korisnik skroluje do sekcije
-3. **Once** - Animacije se izvršavaju samo jednom (ne ponavljaju se svaki put kada se skroluje)
-4. **Performance** - Korišćenje GPU-ubrzanih svojstava (opacity, transform)
-5. **Accessibility** - Framer Motion automatski poštuje `prefers-reduced-motion` preference korisnika
+1. **Smooth Easing** - Using custom cubic-bezier function `[0.22, 1, 0.36, 1]` for natural, professional flow
+2. **Scroll-Triggered** - Most animations activate when user scrolls to the section
+3. **Once** - Animations execute only once (don't repeat every time you scroll)
+4. **Performance** - Using GPU-accelerated properties (opacity, transform)
+5. **Accessibility** - Framer Motion automatically respects user's `prefers-reduced-motion` preference
 
 ---
 
-## 📋 Pregled Animacija po Sekcijama
+## 📋 Animation Overview by Sections
 
 ### 1. Hero Section (`HeroCopy.tsx`)
 
-**Šta se animira:**
-- ✨ News badge - fade in odozgo
-- 📝 Glavni naslov "Sigma helps you hire, pay and retain anyone" - fade + slide up
-- 📄 Subhead i Body tekst - stagger efekat (pojavljuju se jedan za drugim)
-- 🔘 CTA dugmad - stagger efekat
-- 🏆 Product Hunt badges - kasni fade in
+**What gets animated:**
+- ✨ News badge - fade in from top
+- 📝 Main title "Sigma helps you hire, pay and retain anyone" - fade + slide up
+- 📄 Subhead and Body text - stagger effect (appear one after another)
+- 🔘 CTA buttons - stagger effect
+- 🏆 Product Hunt badges - delayed fade in
 
-**Karakteristike:**
+**Characteristics:**
 ```typescript
 - News badge: fade in from top (duration: 0.4s)
-- Naslov: fade + slide up (duration: 0.6s)
-- Tekst: stagger sa 0.15s delay između elemenata
-- Badges: pojavljuju se posle 1s
+- Title: fade + slide up (duration: 0.6s)
+- Text: stagger with 0.15s delay between elements
+- Badges: appear after 1s
 ```
 
 ---
 
 ### 2. Competitor Logos (`HeroVisual.tsx`)
 
-**Šta se animira:**
-- 🏢 Logoi konkurencije se pojavljuju jedan po jedan **sleva na desno** kada korisnik dođe do sekcije
-- 📱 Hero slika - fade + slide up
+**What gets animated:**
+- 🏢 Competitor logos appear one by one **from left to right** when user reaches the section
+- 📱 Hero image - fade + slide up
 
-**Karakteristike:**
+**Characteristics:**
 ```typescript
-- Svaki logo ima 0.1s delay više od prethodnog
-- Animacija: opacity 0→1, x: -20→0
-- Trigger: kada sekcija uđe u viewport (margin: -100px)
+- Each logo has 0.1s delay more than the previous one
+- Animation: opacity 0→1, x: -20→0
+- Trigger: when section enters viewport (margin: -100px)
 ```
 
 ---
 
 ### 3. Business Features (`BusinessFeatures.tsx`)
 
-**Sekcija:** "Sigma is designed for businesses powered by global emerging talent"
+**Section:** "Sigma is designed for businesses powered by global emerging talent"
 
-**Šta se animira:**
-- 📋 Naslov sekcije - fade + slide up
-- 🎴 Tri kartice ("Hire in Minutes", "Your Pay, Their Way", "Master IRS Compliance") - pojavljuju se jedna po jedna
+**What gets animated:**
+- 📋 Section title - fade + slide up
+- 🎴 Three cards ("Hire in Minutes", "Your Pay, Their Way", "Master IRS Compliance") - appear one by one
 
-**Karakteristike:**
+**Characteristics:**
 ```typescript
-- Svaka kartica: opacity 0→1, y: 30→0
-- Delay između kartica: 0.15s
+- Each card: opacity 0→1, y: 30→0
+- Delay between cards: 0.15s
 - Duration: 0.6s
 ```
 
@@ -69,15 +69,15 @@ Sve animacije su implementirane korišćenjem **Framer Motion** biblioteke, prat
 
 ### 4. Scale Workforce (`ScaleWorkforce.tsx`)
 
-**Šta se animira:**
-- 🎯 Naslov "Scale your workforce" - fade + scale efekat (0.95→1)
-- 📇 Četiri expandable kartice - stagger efekat
+**What gets animated:**
+- 🎯 Title "Scale your workforce" - fade + scale effect (0.95→1)
+- 📇 Four expandable cards - stagger effect
 - 📂 Expansion content - smooth height animation
 
-**Karakteristike:**
+**Characteristics:**
 ```typescript
-- Naslov: scale animation (0.95→1) + opacity
-- Kartice: pojavljuju se sa 0.1s delay između njih
+- Title: scale animation (0.95→1) + opacity
+- Cards: appear with 0.1s delay between them
 - Expansion: smooth height transition (0.3s)
 ```
 
@@ -85,24 +85,24 @@ Sve animacije su implementirane korišćenjem **Framer Motion** biblioteke, prat
 
 ### 5. Financial & Compliance Hubs (`FinancialComplianceHubs.tsx`)
 
-**Najkompleksnija sekcija sa tri različite animacije!**
+**Most complex section with three different animations!**
 
-**Šta se animira:**
-- 💚 "Global finances for your workers" (dark green card) - **slide in iz leva**
-- 💛 "Truly local benefits" (lime card) - **slide in iz desna**
-- 🟡 "Compliance & Reporting Hub" (yellow card) - **slide in odozdo**
+**What gets animated:**
+- 💚 "Global finances for your workers" (dark green card) - **slide in from left**
+- 💛 "Truly local benefits" (lime card) - **slide in from right**
+- 🟡 "Compliance & Reporting Hub" (yellow card) - **slide in from bottom**
 
-**Karakteristike:**
+**Characteristics:**
 ```typescript
-// Leva kartica
+// Left card
 initial: { opacity: 0, x: -60 }
 animate: { opacity: 1, x: 0 }
 
-// Desna kartica
+// Right card
 initial: { opacity: 0, x: 60 }
 animate: { opacity: 1, x: 0 }
 
-// Donja kartica (poseban trigger)
+// Bottom card (special trigger)
 initial: { opacity: 0, y: 40 }
 animate: { opacity: 1, y: 0 }
 ```
@@ -111,14 +111,14 @@ animate: { opacity: 1, y: 0 }
 
 ### 6. Global Reach (`GlobalReach.tsx`)
 
-**Šta se animira:**
-- 🌍 Naslov "We get you to every country" - fade + slide up
-- 📝 Tekst i CTA - sequential fade in
+**What gets animated:**
+- 🌍 Title "We get you to every country" - fade + slide up
+- 📝 Text and CTA - sequential fade in
 
-**Karakteristike:**
+**Characteristics:**
 ```typescript
-- Naslov: duration 0.6s
-- Tekst: delay 0.2s
+- Title: duration 0.6s
+- Text: delay 0.2s
 - CTA: delay 0.3s
 ```
 
@@ -126,12 +126,12 @@ animate: { opacity: 1, y: 0 }
 
 ### 7. Final CTA (`CTAShowcase.tsx`)
 
-**Sekcija:** "Let's build your Global Team with Sigma"
+**Section:** "Let's build your Global Team with Sigma"
 
-**Šta se animira:**
-- 🎴 Cela dark green kartica - fade + scale efekat
+**What gets animated:**
+- 🎴 Entire dark green card - fade + scale effect
 
-**Karakteristike:**
+**Characteristics:**
 ```typescript
 initial: { opacity: 0, scale: 0.95 }
 animate: { opacity: 1, scale: 1 }
@@ -140,63 +140,63 @@ duration: 0.7s
 
 ---
 
-## ⚡ Performance Optimizacije
+## ⚡ Performance Optimizations
 
 ### 1. **useInView Hook**
 ```typescript
 const isInView = useInView(ref, { once: true, margin: "-100px" });
 ```
-- `once: true` - animacija se izvršava samo jednom
-- `margin: "-100px"` - animacija počinje 100px pre nego što element uđe u viewport
+- `once: true` - animation executes only once
+- `margin: "-100px"` - animation starts 100px before element enters viewport
 
 ### 2. **GPU Acceleration**
-Sve animacije koriste svojstva koja se mogu hardverski ubrzati:
+All animations use properties that can be hardware accelerated:
 - `opacity`
 - `transform` (x, y, scale)
 
 ### 3. **Accessibility**
-Framer Motion automatski detektuje `prefers-reduced-motion` i:
-- Preskače animacije ako je korisnik isključio animacije u sistemu
-- Odmah prikazuje finalno stanje
+Framer Motion automatically detects `prefers-reduced-motion` and:
+- Skips animations if user has disabled animations in system
+- Immediately shows final state
 
 ---
 
-## 🎬 Animacija Timeline
+## 🎬 Animation Timeline
 
-Kada korisnik učita stranicu:
+When user loads the page:
 
 ```
 0ms     → News badge fade in
-200ms   → Hero naslov slide up
-500ms   → Subhead pojava
-650ms   → Body tekst pojava
-800ms   → Prvi CTA dugme
-950ms   → Drugi CTA dugme
+200ms   → Hero title slide up
+500ms   → Subhead appears
+650ms   → Body text appears
+800ms   → First CTA button
+950ms   → Second CTA button
 1000ms  → Product Hunt badges
 
 [Scroll Start]
 
-→ Dashboard slika slide up
-→ Logoi konkurencije (jedan po jedan, levo→desno)
-→ Business Features naslov
-→ Business kartice (stagger)
-→ "Scale workforce" naslov (scale)
-→ Expandable kartice (stagger)
-→ Finance kartice (levo/desno slide)
-→ Compliance kartica (odozdo)
-→ Global Reach naslov
+→ Dashboard image slide up
+→ Competitor logos (one by one, left→right)
+→ Business Features title
+→ Business cards (stagger)
+→ "Scale workforce" title (scale)
+→ Expandable cards (stagger)
+→ Finance cards (left/right slide)
+→ Compliance card (from bottom)
+→ Global Reach title
 → Final CTA (scale)
 ```
 
 ---
 
-## 🔧 Tehnički Detalji
+## 🔧 Technical Details
 
 ### Custom Easing Function
 ```typescript
 ease: [0.22, 1, 0.36, 1] as const
 ```
-Ova cubic-bezier kriva daje profesionalan, smooth efekat koji je sličan Material Design animacijama.
+This cubic-bezier curve provides a professional, smooth effect similar to Material Design animations.
 
 ### Stagger Pattern
 ```typescript
@@ -205,52 +205,52 @@ Ova cubic-bezier kriva daje profesionalan, smooth efekat koji je sličan Materia
   delayChildren: 0.3,
 }
 ```
-- `staggerChildren`: delay između dece
-- `delayChildren`: početni delay pre nego što počnu da se pojavljuju
+- `staggerChildren`: delay between children
+- `delayChildren`: initial delay before they start appearing
 
 ### Viewport Trigger
 ```typescript
 margin: "-100px"
 ```
-Animacija počinje 100px pre nego što element postane vidljiv - daje iluziju da je animacija već u toku kada element dođe u view.
+Animation starts 100px before element becomes visible - gives illusion that animation is already in progress when element comes into view.
 
 ---
 
 ## 📱 Responsive Behavior
 
-Sve animacije rade na svim veličinama ekrana:
-- Mobile: animacije su identične ali brže (bolji UX na mobilnim)
-- Tablet: standardne brzine
-- Desktop: pun efekat
+All animations work on all screen sizes:
+- Mobile: animations are identical but faster (better UX on mobile)
+- Tablet: standard speeds
+- Desktop: full effect
 
 ---
 
-## 🎨 Best Practices Koje Smo Pratili
+## 🎨 Best Practices We Followed
 
-1. ✅ **Subtle, Not Overwhelming** - Animacije su suptilne i ne ometaju čitanje
-2. ✅ **Purposeful** - Svaka animacija ima svrhu (vodi pažnju korisnika)
-3. ✅ **Performance** - Korišćenje GPU-ubrzanih svojstava
-4. ✅ **Accessibility** - Poštovanje prefers-reduced-motion
-5. ✅ **Once** - Animacije se ne ponavljaju svaki put
-6. ✅ **Progressive Enhancement** - Sadržaj je čitljiv čak i bez animacija
+1. ✅ **Subtle, Not Overwhelming** - Animations are subtle and don't interfere with reading
+2. ✅ **Purposeful** - Every animation has a purpose (guides user attention)
+3. ✅ **Performance** - Using GPU-accelerated properties
+4. ✅ **Accessibility** - Respecting prefers-reduced-motion
+5. ✅ **Once** - Animations don't repeat every time
+6. ✅ **Progressive Enhancement** - Content is readable even without animations
 
 ---
 
-## 🚀 Testiranje
+## 🚀 Testing
 
-Za testiranje animacija:
+To test animations:
 
 ```bash
 npm run dev
 ```
 
-Zatim otvorite:
-- `http://localhost:3000` - testiranje na desktopu
-- Otvorite DevTools → Toggle device toolbar - testiranje na mobilnom
+Then open:
+- `http://localhost:3000` - testing on desktop
+- Open DevTools → Toggle device toolbar - testing on mobile
 
 ---
 
-## 📚 Reference
+## 📚 References
 
 - [Framer Motion Documentation](https://www.framer.com/motion/)
 - [Material Design Motion](https://material.io/design/motion)
@@ -258,5 +258,5 @@ Zatim otvorite:
 
 ---
 
-Svi animacijski parametri (duration, delay, easing) mogu se lako prilagoditi u component fajlovima ako želite da eksperimentišete sa različitim efektima! 🎨
+All animation parameters (duration, delay, easing) can be easily adjusted in component files if you want to experiment with different effects! 🎨
 
